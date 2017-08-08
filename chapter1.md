@@ -17,9 +17,9 @@ Java NIO包括下面三个核心组件：
 Channel和Buffer都是有多个的，下面列表是Java NIO中实现的几个主要的Channel：
 
 * FileChannel：File System IO
-* DatagramChannel：
-* SocketChannel
-* ServerSocketChannel
+* DatagramChannel：UDP
+* SocketChannel：TCP
+* ServerSocketChannel：
 
 这里可以看到，这些channel包含了UDP、TCP以及文件IO。
 
