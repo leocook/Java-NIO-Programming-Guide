@@ -6,7 +6,7 @@
 
 在Java BIO API中，开发人员会直接使用`字节流`和`字符流`来进行IO开发，所以有人会说`Java BIO API是面向流的IO`。在Java NIO API中，开发人员将会使用channel和buffer来进行IO开发，数据将会从channel中被读到buffer中去，也会从buffer中被写入到channel中去。
 
-## \#\# Java NIO: Non-blocking IO
+## Java NIO: Non-blocking IO
 
 
 
