@@ -1,4 +1,4 @@
 # Java NIO概述
 
-在Java
+自Java1.4开始，Java提供了
 
