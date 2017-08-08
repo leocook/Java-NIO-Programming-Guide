@@ -14,11 +14,11 @@ Java NIO的Channel和stream\(流\)比较相似，但是也有些不同之处：
 
 下面是Java NIO中最重要的几个Channel的实现类：
 
-* FileChannel：从文件中读数据，或者把数据写入到文件中去
+* FileChannel：从文件中读数据，或者把数据写入到文件中去；
 
-* DatagramChannel：通过UDP协议来读取数据，或者把数据以UDP形式广播出去
+* DatagramChannel：通过UDP协议来读取数据，或者把数据以UDP形式广播出去；
 
-* SocketChannel：通过TCP来读写数据
+* SocketChannel：通过TCP来读写数据；
 
 * ServerSocketChannel：以web server的形式来监听TCP连接，每有一个新的连接都会创建一个SocketChannel。
 
