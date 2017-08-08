@@ -10,5 +10,7 @@ Java NIO包括下面三个核心组件：
 
 ## Channels and Buffers
 
-通常来说，NIO中的数据都是从Channel开始的。Channel和Stream比较像，数据可以从Channel中被读到Buffer中去，同样数据也可以从Buffer中被写入到Channel中去。
+通常来说，NIO中的数据都是从Channel开始的。Channel和Stream比较像，数据可以从Channel中被读到Buffer中去，同样数据也可以从Buffer中被写入到Channel中去。例如下图：
+
+
 
