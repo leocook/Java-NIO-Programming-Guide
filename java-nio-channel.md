@@ -22,5 +22,7 @@ Java NIO的Channel和stream\(流\)比较相似，但是也有些不同之处：
 
 * ServerSocketChannel：以web server的形式来监听TCP连接，每有一个新的连接都会创建一个SocketChannel。
 
+## Basic Channel Example
+
 
 
