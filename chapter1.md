@@ -41,6 +41,10 @@ Java NIO中还有一个`MappedByteBuffer`，用来作为内存和文件的映射
 
 Selector允许一个线程同时处理多个Channel，当你的应用程序中有大量的连接，但是每个连接传输的数据量都很小时，这种场景比较适合使用selector，例如聊天服务器。
 
+下图是一个Selector处理三个Channel时的架构图：
+
+![](/assets/import1.png)
+
 &lt;br /&gt;
 
 &lt;br /&gt;
