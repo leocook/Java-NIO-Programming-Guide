@@ -45,5 +45,5 @@ Selector允许一个线程同时处理多个Channel，当你的应用程序中�
 
 ![](/assets/import1.png)
 
-你需要把Channel注册到你所使用的Selector上，然后你需要调用select\(\)方法，该方法将会阻塞，直到注册在该Selector上的某个Channel中存在可被处理的事件，当select\(\)方法退出阻塞时，线程将可以开始处理这些事件。其中的事件包括新来的请求，或者接收数据等等。
+你需要把Channel注册到你所使用的Selector上，然后你需要调用select\(\)方法，该方法将会阻塞，直到注册在该Selector上的某个Channel中存在可被处理的事件，当select\(\)方法退出阻塞时，线程将可以开始处理这些事件。其中的事件包括新来的请求，或者已经接收到的数据等等。
 
