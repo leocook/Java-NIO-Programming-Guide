@@ -14,7 +14,7 @@ Java NIO包括下面三个核心组件：
 
 ![](/assets/import.png)
 
-Channel和Buffer都是有多个的，
+Channel和Buffer都是有多个的，下面列表是Java NIO中实现的几个主要的Channel：
 
 z
 
