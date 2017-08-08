@@ -41,5 +41,7 @@ while (bytesRead != -1) {
 aFile.close();
 ```
 
+## Buffer的内存大小，指针（Position）以及限制（Limit）
+
 
 
