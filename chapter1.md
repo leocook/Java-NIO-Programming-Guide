@@ -8,5 +8,5 @@
 
 ## Java NIO: Non-blocking IO
 
-Java NIO允许
+Java NIO允许开发者使用“Non-blocking IO”\(非阻塞IO\)
 
