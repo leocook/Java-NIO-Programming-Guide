@@ -39,6 +39,14 @@ Java NIO中还有一个`MappedByteBuffer`，用来作为内存和文件的映射
 
 ## Selectors
 
+Selector允许一个线程同时处理多个Channel，
+
+
+
+
+
+
+
 &lt;br /&gt;
 
 &lt;br /&gt;
