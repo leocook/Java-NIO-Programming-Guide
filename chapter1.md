@@ -33,5 +33,7 @@ Channel和Buffer都是有多个的，下面列表是Java NIO中实现的几个�
 * LongBuffer
 * ShortBuffer
 
-从字面上就很好理解，这些Buffer是用来传输基础类型数据的，例如：byte、short、int、long、float、double以及character。
+从字面上就很好理解，这些Buffer是用来传输基础类型数据的，例如：byte、short、int、long、float、double以及character等。
+
+Java NIO中同样还有
 
