@@ -13,5 +13,5 @@ Buffer本质上是一块内存，你可以向这块内存写入数据，然后�
 3. 从buffer中读数据
 4. 调用buffer.clear\(\)或者buffer.compact方法
 
-当你向buffer中写入数据后，
+当你向buffer中写入数据时，
 
