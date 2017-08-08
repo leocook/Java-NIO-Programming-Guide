@@ -19,7 +19,7 @@ Channel和Buffer都是有多个的，下面列表是Java NIO中实现的几个�
 * FileChannel：File System IO
 * DatagramChannel：UDP
 * SocketChannel：TCP
-* ServerSocketChannel：
+* ServerSocketChannel：TCP
 
 这里可以看到，这些channel包含了UDP、TCP以及文件IO。
 
