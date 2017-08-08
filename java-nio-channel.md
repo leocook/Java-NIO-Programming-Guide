@@ -20,7 +20,7 @@ Java NIO的Channel和stream\(流\)比较相似，但是也有些不同之处：
 
 * SocketChannel：通过TCP来读写数据
 
-* ServerSocketChannel：TCP
+* ServerSocketChannel：以web server的形式来监听TCP连接
 
 
 
