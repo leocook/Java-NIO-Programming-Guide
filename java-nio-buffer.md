@@ -6,5 +6,14 @@ Buffer本质上是一块内存，你可以向这块内存写入数据，然后�
 
 ## Buffer的基础操作
 
-使用NIO Buffer来读或写数据
+使用NIO Buffer来读或写数据通常需要下面这4个小步骤：
+
+1. 向buffer中写数据
+2. 调用buffer.flip\(\)方法
+3. 从buffer中读数据
+4. 调用buffer.clear\(\)或者buffer.compact方法
+
+
+
+
 
