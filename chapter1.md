@@ -12,7 +12,5 @@ Java NIO允许开发者使用“Non-blocking IO”\(非阻塞IO\)。举个例子
 
 ## Java NIO: Selectors
 
-
-
-
+Java NIO中提供了一个概念被称之为“selectors”
 
