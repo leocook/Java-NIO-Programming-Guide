@@ -15,3 +15,5 @@ Buffer本质上是一块内存，你可以向这块内存写入数据，然后�
 
 当你向buffer中写入数据时，buffer将会记录下你写入了多少数据。当你需要读数据时，你将要调用flip\(\)方法把buffer从writing模式切换到reading模式。在reading模式下，你可以把写入buffer中的数据全部都读取出来。
 
+一旦读完所有的数据，
+
