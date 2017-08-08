@@ -13,5 +13,5 @@ Buffer本质上是一块内存，你可以向这块内存写入数据，然后�
 3. 从buffer中读数据
 4. 调用buffer.clear\(\)或者buffer.compact方法
 
-当你向buffer中写入数据时，buffer将会记录下你写入了多少数据。当你需要读数据时，你将要调用flip\(\)方法把buffer从writing模式切换到reading模式，
+当你向buffer中写入数据时，buffer将会记录下你写入了多少数据。当你需要读数据时，你将要调用flip\(\)方法把buffer从writing模式切换到reading模式。在reading模式下，
 
