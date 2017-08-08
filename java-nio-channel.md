@@ -22,7 +22,31 @@ Java NIO的Channel和stream\(流\)比较相似，但是也有些不同之处：
 
 * ServerSocketChannel：以web server的形式来监听TCP连接，每有一个新的连接都会创建一个SocketChannel。
 
-## Basic Channel Example
+## Channel的简单实例
 
+下面这个例子实现从FileChannel重读取数据到Buffer中：
 
+```
+RandomAccessFile aFile = new RandomAccessFile("data/nio-data.txt", "rw");
+    FileChannel inChannel = aFile.getChannel();
+
+    ByteBuffer buf = ByteBuffer.allocate(48);
+
+    int bytesRead = inChannel.read(buf);
+    while (bytesRead != -1) {
+
+      System.out.println("Read " + bytesRead);
+      buf.flip();
+
+      while(buf.hasRemaining()){
+          System.out.print((char) buf.get());
+      }
+
+      buf.clear();
+      bytesRead = inChannel.read(buf);
+    }
+    aFile.close();
+```
+
+关于buffer的flip\(\)方法，下一篇会重点介绍到。
 
