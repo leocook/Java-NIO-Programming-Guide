@@ -6,7 +6,5 @@ Java NIO包括下面三个核心组件：
 * Buffers
 * Selectors
 
-
-
-
+Java NIO提供了多个类和组件，
 
