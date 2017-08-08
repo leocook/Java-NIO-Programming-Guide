@@ -10,7 +10,7 @@ Java NIO的Channel和stream\(流\)比较相似，但是也有些不同之处：
 
 ![](/assets/import2.png)
 
-## Channel Implementations
+## Channel的几种实现
 
 
 
