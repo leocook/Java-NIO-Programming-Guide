@@ -12,5 +12,5 @@ Java NIO允许开发者使用“Non-blocking IO”\(非阻塞IO\)。举个例子
 
 ## Java NIO: Selectors
 
-Java NIO中提供了一个概念被称之为“selector”\(选择器\)。一个selector对象可以同时监控多个channel中的事件，
+Java NIO中提供了一个概念被称之为“selector”\(选择器\)。一个selector对象可以同时监控多个channel中的事件，这里的事件包括：l连接的打开，ji接收到数据等等。
 
