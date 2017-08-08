@@ -14,9 +14,7 @@ Java NIO的Channel和stream\(流\)比较相似，但是也有些不同之处：
 
 下面是Java NIO中最重要的几个Channel的实现类：
 
-* FileChannel
-
-
+* FileChannel：从文件中读数据，或者把数据写入到文件中区
 
 * DatagramChannel：UDP
 
