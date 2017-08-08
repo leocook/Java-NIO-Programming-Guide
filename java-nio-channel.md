@@ -18,7 +18,7 @@ Java NIO的Channel和stream\(流\)比较相似，但是也有些不同之处：
 
 * DatagramChannel：通过UDP协议来读取数据，或者把数据以UDP形式广播出去
 
-* SocketChannel：TCP
+* SocketChannel：通过TCP来读写数据
 
 * ServerSocketChannel：TCP
 
