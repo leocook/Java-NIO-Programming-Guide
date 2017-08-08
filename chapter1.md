@@ -37,6 +37,8 @@ Channel和Buffer都是有多个的，下面列表是Java NIO中实现的几个�
 
 Java NIO中还有一个`MappedByteBuffer`，用来作为内存和文件的映射。
 
+## Selectors
+
 &lt;br /&gt;
 
 &lt;br /&gt;
