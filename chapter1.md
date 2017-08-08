@@ -8,5 +8,5 @@
 
 ## Java NIO: Non-blocking IO
 
-Java NIO允许开发者使用“Non-blocking IO”\(非阻塞IO\)。举个例子，当一个线程在把数据从channel读到buffer中的过程中，该线程还可以去处理其它事情。直到完成数据读到buffer中后，
+Java NIO允许开发者使用“Non-blocking IO”\(非阻塞IO\)。举个例子，当一个线程在把数据从channel读到buffer的过程中，该线程还可以去处理其它事情。直到完成数据读到buffer中后，线程才会去处理它。在把数据写入到channle的过程中，同理。
 
