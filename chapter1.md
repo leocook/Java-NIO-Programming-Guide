@@ -10,7 +10,5 @@ Java NIO包括下面三个核心组件：
 
 ## Channels and Buffers
 
-
-
-
+通常来说，NIO中的数据都是从Channel开始的，
 
