@@ -19,5 +19,27 @@ Buffer本质上是一块内存，你可以向这块内存写入数据，然后�
 
 下面是一个关于buffer使用的简单案例：
 
+```
+RandomAccessFile aFile = new RandomAccessFile("data/nio-data.txt", "rw");
+FileChannel inChannel = aFile.getChannel();
+
+//create buffer with capacity of 48 bytes
+ByteBuffer buf = ByteBuffer.allocate(48);
+
+int bytesRead = inChannel.read(buf); //read into buffer.
+while (bytesRead != -1) {
+
+  buf.flip();  //make buffer ready for read
+
+  while(buf.hasRemaining()){
+      System.out.print((char) buf.get()); // read 1 byte at a time
+  }
+
+  buf.clear(); //make buffer ready for writing
+  bytesRead = inChannel.read(buf);
+}
+aFile.close();
+```
+
 
 
