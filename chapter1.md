@@ -35,7 +35,7 @@ Channel和Buffer都是有多个的，下面列表是Java NIO中实现的几个�
 
 从字面上就很好理解，这些Buffer是用来传输基础类型数据的，例如：byte、short、int、long、float、double以及character等。
 
-Java NIO中还有一个`MappedByteBuffer`，用来
+Java NIO中还有一个`MappedByteBuffer`，用来作为内存和文件的映射。
 
 &lt;br /&gt;
 
@@ -48,6 +48,4 @@ Java NIO中还有一个`MappedByteBuffer`，用来
 &lt;br /&gt;
 
 &lt;br /&gt;
-
-
 
