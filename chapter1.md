@@ -4,5 +4,5 @@
 
 ## Java NIO: Channels and Buffers
 
-在Java BIO API中，开发人员会直接使用`字节流`和`字符流`来进行IO开发，所以有人会说Java BIO API是`面向流的IO`。
+在Java BIO API中，开发人员会直接使用`字节流`和`字符流`来进行IO开发，所以有人会说`Java BIO API是面向流的IO`。
 
