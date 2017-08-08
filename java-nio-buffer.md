@@ -4,5 +4,9 @@ Java NIO中Buffer用于和Channel之间进行数据交流。数据将会从chann
 
 Buffer本质上是一块内存，你可以向这块内存写入数据，然后再从这块内存中把数据读出来。该内存块被包装在NIO Buffer对象中，buffer类提供了一系列的方法，便于开发人员操作这块buffer内存。
 
+## Buffer的基础操作
+
+
+
 
 
