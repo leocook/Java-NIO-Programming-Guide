@@ -8,7 +8,7 @@ Java NIO的Channel和stream\(流\)比较相似，但是也有些不同之处：
 
 上面的这三条说明，可以使用下面的贴图来表示：
 
-
+![](/assets/import2.png)
 
 
 
