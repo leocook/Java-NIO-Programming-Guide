@@ -53,9 +53,9 @@ Buffer的本质就是一块内存，你可以向这块内存写入一些数据�
 
 当buffer的模式（reading/writing）不同时，position和limit的意义会有所不同。但无论buffer在什么模式下，capacity的意义都是一样的。
 
-### \#\#\# Capacity
+### Capacity
 
-
+buffer的本质是一块确定大小的内存块，buffer的内存大小，
 
 
 
