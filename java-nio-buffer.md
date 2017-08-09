@@ -43,5 +43,7 @@ aFile.close();
 
 ## Buffer的内存大小，指针（Position）以及限制（Limit）
 
+Buffer的本质就是一块内存，你可以向这块内存写入一些数据，然后再从这块内存中把这些数据读出来。该内存块被包装在NIO Buffer对象中，buffer类提供了一系列的方法，便于开发人员操作这块buffer内存。
+
 
 
