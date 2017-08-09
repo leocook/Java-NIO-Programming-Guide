@@ -57,3 +57,9 @@ Buffer的本质就是一块内存，你可以向这块内存写入一些数据�
 
 Buffer的本质是一块确定大小的内存块，“capacity”指的就是这个内存块的大小。你可以向buffer中写入capacity字节的数据，当buffer写满后，如果还要向里面写数据，则需要清空（读取玩里边的数据，或者清空）buffer里的数据。
 
+### Position
+
+在writing模式下，
+
+
+
