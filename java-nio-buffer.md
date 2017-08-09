@@ -55,7 +55,5 @@ Buffer的本质就是一块内存，你可以向这块内存写入一些数据�
 
 ### Capacity
 
-buffer的本质是一块确定大小的内存块，buffer的内存大小，
-
-
+Buffer的本质是一块确定大小的内存块，buffer的内存大小，
 
