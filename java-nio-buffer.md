@@ -47,7 +47,9 @@ Buffer的本质就是一块内存，你可以向这块内存写入一些数据�
 
 为了能够理解Buffer的工作原理，需要了解它的三个属性：
 
-
+* capacity
+* position
+* limit
 
 
 
