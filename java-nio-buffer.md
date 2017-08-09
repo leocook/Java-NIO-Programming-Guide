@@ -59,5 +59,5 @@ Buffer的本质是一块确定大小的内存块，“capacity”指的就是这
 
 ### Position
 
-在writing模式下，position将会从0开始，每向内存中写入一个字节的数据，buffer的指针将会向后移动一个位置，也就是position将会加1。position的最大值是capacity-1.
+在writing模式下，position将会从0开始，每向内存中写入一个字节的数据，buffer的指针将会向后移动一个位置，也就是`position`将会加1。`position`的最大值是`capacity-1`.
 
