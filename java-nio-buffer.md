@@ -59,7 +59,5 @@ Buffer的本质是一块确定大小的内存块，“capacity”指的就是这
 
 ### Position
 
-在writing模式下，
-
-
+在writing模式下，position将会从0开始，
 
