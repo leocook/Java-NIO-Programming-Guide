@@ -55,5 +55,5 @@ Buffer的本质就是一块内存，你可以向这块内存写入一些数据�
 
 ### Capacity
 
-Buffer的本质是一块确定大小的内存块，“capacity”指的就是这个内存块的大小。你可以向buffer中写入capacity字节的数据，
+Buffer的本质是一块确定大小的内存块，“capacity”指的就是这个内存块的大小。你可以向buffer中写入capacity字节的数据，当buffer写满后，
 
