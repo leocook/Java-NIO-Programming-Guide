@@ -51,5 +51,8 @@ Buffer的本质就是一块内存，你可以向这块内存写入一些数据�
 * position
 * limit
 
-当buffer的模式（reading/writing）不同时，
+当buffer的模式（reading/writing）不同时，position和limit的意义会有所不同。
+
+* 
+
 
