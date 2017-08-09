@@ -63,3 +63,7 @@ Buffer的本质是一块确定大小的内存块，“capacity”指的就是这
 
 在reading模式下，开发者也可以从一个指定的position位置开始读取数据。当执行了flip\(\)方法后，buffer从writing模式切换到reading模式后，position将会被重新设置为0。当读取了第position字节的数据后，position将会移动指向下一个位置，并继续准备去读取下一个字节的数据。
 
+### Limit
+
+
+
