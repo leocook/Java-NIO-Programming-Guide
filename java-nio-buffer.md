@@ -61,5 +61,5 @@ Buffer的本质是一块确定大小的内存块，“capacity”指的就是这
 
 在writing模式下，position将会从0开始，每向内存中写入一个字节的数据，buffer的指针将会向后移动一个位置，也就是`position`将会加1。`position`的最大值是`capacity-1`.
 
-在reading模式下，
+执行了flip\(\)方法后，buffer将会在reading模式下，
 
