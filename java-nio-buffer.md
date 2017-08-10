@@ -73,6 +73,8 @@ Capacity、position以及Limit都可以理解是buffer的字节位置，在buffe
 
 ## Buffer类型
 
+Java NIO有下面这些类型的Buffer：
+
 * ByteBuffer
 * MappedByteBuffer
 * CharBuffer
@@ -81,8 +83,6 @@ Capacity、position以及Limit都可以理解是buffer的字节位置，在buffe
 * IntBuffer
 * LongBuffer
 * ShortBuffer
-
-
 
 
 
