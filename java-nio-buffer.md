@@ -67,5 +67,5 @@ Buffer的本质是一块确定大小的内存块，“capacity”指的就是这
 
 在writing模式下，limit表示最多可以向buffer中写入多少数据。writing模式下，它的值等于capacity。
 
-在reading模式下，limit表示你可以读取的数据量。所以，当buffer从writing模式切换到reading模式时，
+在reading模式下，limit表示你可以读取的数据量。所以，当buffer从writing模式切换到reading模式时，reading模式下开始时的limit值就等于writing模式结束时的position
 
