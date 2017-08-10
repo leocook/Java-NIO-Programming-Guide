@@ -88,5 +88,7 @@ Java NIO有下面这些类型的Buffer：
 
 MappedByteBuffer稍微有点特别，它可以定义内存和文件的映射，当你操作这个内存的buffer时，其实操作的就是映射的那个文件。
 
+## 创建Buffer
+
 
 
