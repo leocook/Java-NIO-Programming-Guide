@@ -73,6 +73,15 @@ Capacity、position以及Limit都可以理解是buffer的字节位置，在buffe
 
 ## Buffer类型
 
+* ByteBuffer
+* MappedByteBuffer
+* CharBuffer
+* DoubleBuffer
+* FloatBuffer
+* IntBuffer
+* LongBuffer
+* ShortBuffer
+
 
 
 
