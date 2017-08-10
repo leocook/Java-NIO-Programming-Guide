@@ -84,7 +84,7 @@ Java NIO有下面这些类型的Buffer：
 * LongBuffer
 * ShortBuffer
 
-
+可以看出来
 
 
 
