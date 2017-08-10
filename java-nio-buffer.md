@@ -65,5 +65,9 @@ Buffer的本质是一块确定大小的内存块，“capacity”指的就是这
 
 ### Limit
 
-在writing模式下，limit表示最多可以向buffer中写入多少数据，它的值等于capacity。
+在writing模式下，limit表示最多可以向buffer中写入多少数据。writing模式下，它的值等于capacity。
+
+
+
+
 
