@@ -71,3 +71,9 @@ Buffer的本质是一块确定大小的内存块，“capacity”指的就是这
 
 Capacity、position以及Limit都可以理解是buffer的字节位置，在buffer从writing模式切换到reading模式时，reading模式开始时的limit值就等于writing模式结束时的position值，reading模式开始时position值默认是0，当然也可以由开发人员自己去指定这个position。
 
+## Buffer类型
+
+
+
+
+
