@@ -147,7 +147,5 @@ byte aByte = buf.get();
 
 ## rewind\(\)方法
 
-
-
-
+调用Buffer.rewind\(\)方法可以把position的值设置回0，然后重新从buffer中开始读取数据，
 
