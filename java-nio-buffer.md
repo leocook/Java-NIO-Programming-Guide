@@ -157,5 +157,5 @@ byte aByte = buf.get();
 
 如果执行了clear\(\)方法，position将会设置为0，limit将会被设置为capacity值。换言之，buffer将会被清空。但是buffer中的数据不会被清除掉。只是标识position从0到capacity的位置都可以写入数据。
 
-调用了clear\(\)方法后，
+调用了clear\(\)方法后，如果之前有数据没有被读过，
 
