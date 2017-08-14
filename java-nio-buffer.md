@@ -122,13 +122,5 @@ put方法有多个版本，意味着允许你使用多种方式把数据写入�
 
 ## flip\(\)方法
 
-flip\(\)方法会把Buffer从writing模式切换到reading模式。调用了flip\(\)方法后，
-
-
-
-
-
-
-
-
+flip\(\)方法会把Buffer从writing模式切换到reading模式。调用了flip\(\)方法后，position将会被设置为0，limit将会被设置为position之前的值。
 
