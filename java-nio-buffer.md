@@ -210,6 +210,6 @@ Buffer在Java NIO扮演者重要的角色，甚至可以理解Java NIO API就是
 
 * Buffer存在reading和writing两个状态，调用flip\(\)方法可以实现writing ---&gt; reading状态的转换；调用clear\(\)或者compact\(\)方法可以实现 reading ---&gt; writing 状态的转换。
 * Buffer可以从Channel中读数据，可以向Channel中写数据；也可以通过编程代码来实现数据的读和写。
-
+* 
 
 
