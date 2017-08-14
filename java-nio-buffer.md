@@ -118,5 +118,5 @@ int bytesRead = inChannel.read(buf); //read into buffer.
 buf.put(127);
 ```
 
-put方法有多个版本，意味着允许你使用多种方式把数据写入到buffer中。
+put方法有多个版本，意味着允许你使用多种方式把数据写入到buffer中。例如：
 
