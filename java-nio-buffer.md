@@ -102,5 +102,7 @@ ByteBuffer buf = ByteBuffer.allocate(48);
 CharBuffer buf = CharBuffer.allocate(1024);
 ```
 
+## 把数据写入Buffer
+
 
 
