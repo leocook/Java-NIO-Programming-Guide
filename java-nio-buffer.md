@@ -171,5 +171,5 @@ limit将会被设置为capacity值，这里和clear\(\)方法一样。
 
 ## mark\(\)和reset\(\)
 
-
+开发可以通过执行方法Buffer.mark\(\)来标记Buffer中的某个指定的position方法。
 
