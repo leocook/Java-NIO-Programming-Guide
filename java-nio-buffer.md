@@ -178,8 +178,12 @@ buffer.mark();
 
 //call buffer.get(), and do something else.
 
-buffer.reset();  //set position back to mark. 
+buffer.reset();  //set position back to mark.
 ```
+
+## equals\(\)和compareTo\(\)方法
+
+
 
 
 
