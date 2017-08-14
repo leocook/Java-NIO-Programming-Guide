@@ -192,7 +192,9 @@ buffer.reset();  //set position back to mark.
 * buffer类型相同，例如：byte、char以及int等等；
 * 在buffer中存放的数据量相同；
 
-* 存放的数据
+* buffer中存放的数据是相同的。
+
+简言之：
 
 
 
