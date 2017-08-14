@@ -202,7 +202,7 @@ compareTo方法主要是基于字典顺序来比较两个buffer的大小。假�
 
 * position从0开始到limit，当出现position位置上，A的元素小于B的元素时，A buffer小于B buffer；
 
-* A和B两个Buffer，
+* A和B两个Buffer，当
 
 
 
