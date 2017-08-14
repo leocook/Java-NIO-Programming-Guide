@@ -167,5 +167,5 @@ byte aByte = buf.get();
 
 limit将会被设置为capacity值，这里和clear\(\)方法一样。
 
-现在可以向Buffer中写数据了，
+现在可以向Buffer中写数据了，但不会覆盖之前没有读取的数据。
 
