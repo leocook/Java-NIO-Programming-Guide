@@ -185,3 +185,11 @@ buffer.reset();  //set position back to mark.
 
 当比较两个buffer是否相等时，可以使用equals\(\)或者compareTo\(\)方法。
 
+### equals\(\)方法
+
+
+
+
+
+
+
