@@ -198,5 +198,8 @@ equals方法主要是比较两个buffer是否相等。当buffer满足下面条�
 
 ### compareTo\(\)
 
-compareTo方法主要是基于字典顺序来比较两个buffer的大小。当满足下面任意一个条件时，
+compareTo方法主要是基于字典顺序来比较两个buffer的大小。假设有A、B两个buffer，当满足下面任意一个条件时，表示A buffer是小于B buffer的：
+
+* 
+
 
