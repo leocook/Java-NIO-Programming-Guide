@@ -118,5 +118,5 @@ int bytesRead = inChannel.read(buf); //read into buffer.
 buf.put(127);
 ```
 
-put方法又多个版本，
+put方法有多个版本，
 
