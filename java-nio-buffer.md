@@ -149,3 +149,9 @@ byte aByte = buf.get();
 
 调用Buffer.rewind\(\)方法可以把position的值设置回0，然后重新从buffer中开始读取数据。
 
+## clear\(\)和compact\(\)
+
+当从Buffer中读完数据后，需要再次把Buffer标识为writing状态，以便于可以向buffer写入新的数据。
+
+
+
