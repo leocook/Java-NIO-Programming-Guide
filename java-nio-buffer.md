@@ -128,5 +128,12 @@ flip\(\)方法会把Buffer从writing模式切换到reading模式。调用了flip
 
 ## 从Buffer中读数据
 
+有两个方法可以从buffer中读取数据：
+
+* 把数据直接读到channel中
+* 开发人员自己编码，可以调用get\(\)方法从buffer中读数据
+
+
+
 
 
