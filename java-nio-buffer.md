@@ -171,5 +171,15 @@ limit将会被设置为capacity值，这里和clear\(\)方法一样。
 
 ## mark\(\)和reset\(\)
 
-开发可以通过执行方法Buffer.mark\(\)来标记Buffer中的某个指定的position位置，。
+开发可以通过执行方法Buffer.mark\(\)来标记Buffer中的某个指定的position位置。稍后可以执行Buffer.reset\(\)方法来设置position返回到之前标记的position位置。下面是一个实例：
+
+```
+buffer.mark();
+
+//call buffer.get(), and do something else.
+
+buffer.reset();  //set position back to mark. 
+```
+
+
 
