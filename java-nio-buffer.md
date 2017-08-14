@@ -98,3 +98,9 @@ ByteBuffer buf = ByteBuffer.allocate(48);
 
 下面是一个创建了1024个字节的CharBuffer实例：
 
+```
+CharBuffer buf = CharBuffer.allocate(1024);
+```
+
+
+
