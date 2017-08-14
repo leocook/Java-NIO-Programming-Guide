@@ -204,5 +204,9 @@ compareTo方法主要是基于字典顺序来比较两个buffer的大小。假�
 
 * A和B两个Buffer里的数据相同，但是A的长度比B的长度短。
 
+## 总结
+
+Buffer在Java NIO扮演者重要的角色，
+
 
 
