@@ -90,5 +90,9 @@ MappedByteBuffer稍微有点特别，它可以定义内存和文件的映射，�
 
 ## 创建Buffer
 
+如果想得到一个Buffer对象，就得首先来创建一个buffer对象。每个buffer类都有一个`allocate()`方法用来创建buffer对象。
+
+
+
 
 
