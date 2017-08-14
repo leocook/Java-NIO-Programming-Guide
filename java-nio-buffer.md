@@ -115,8 +115,8 @@ int bytesRead = inChannel.read(buf); //read into buffer.
 * 开发者自己编码把数据写入到Buffer中，例如调用buffer的put方法。
 
 ```
-buf.put(127);   
+buf.put(127);
 ```
 
-
+put方法又多个版本，
 
