@@ -104,5 +104,5 @@ CharBuffer buf = CharBuffer.allocate(1024);
 
 ## 把数据写入Buffer
 
-
+有两个方法可以把数据写入buffer。
 
