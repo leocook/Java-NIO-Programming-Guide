@@ -190,6 +190,9 @@ buffer.reset();  //set position back to mark.
 当buffer满足下面条件时，equals\(\)方法将会返回true:
 
 * buffer类型相同，例如：byte、char以及int等等；
-* 
+* 在buffer中存放的数据量相同；
+
+* 存放的数据
+
 
 
