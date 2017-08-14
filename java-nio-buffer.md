@@ -126,3 +126,7 @@ flip\(\)方法会把Buffer从writing模式切换到reading模式。调用了flip
 
 换言之，执行了flip\(\)方法后，position将标记读的位置，limit标记读取写入的数据时，最多可以读到的位置。
 
+## 从Buffer中读数据
+
+
+
