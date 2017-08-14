@@ -139,5 +139,9 @@ int bytesWritten = inChannel.write(buf);
 
 * 开发人员自己编码，可以调用get\(\)方法从buffer中读数据
 
+```
+byte aByte = buf.get();
+```
+
 
 
