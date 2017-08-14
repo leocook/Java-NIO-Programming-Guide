@@ -143,5 +143,5 @@ int bytesWritten = inChannel.write(buf);
 byte aByte = buf.get();
 ```
 
-当然，get也有多个版本可以调用。
+当然，get也有多个版本可以调用。具体可以查看JavaDoc。
 
