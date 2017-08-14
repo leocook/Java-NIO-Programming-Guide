@@ -187,7 +187,7 @@ buffer.reset();  //set position back to mark.
 
 ### equals\(\)方法
 
-当buffer满足下面条件时，equals\(\)方法将会返回true:
+equals方法主要是比较两个buffer是否相等，当buffer满足下面条件时，equals\(\)方法将会返回true:
 
 * buffer类型相同，例如：byte、char以及int等等；
 * 在buffer中存放的数据量相同；
@@ -197,8 +197,6 @@ buffer.reset();  //set position back to mark.
 简言之：类型相同、存放的数据相同。
 
 ### compareTo\(\)
-
-
 
 
 
