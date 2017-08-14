@@ -194,7 +194,11 @@ buffer.reset();  //set position back to mark.
 
 * buffer中存放的数据是相同的。
 
-简言之：
+简言之：类型相同、存放的数据相同。
+
+### compareTo\(\)
+
+
 
 
 
