@@ -124,5 +124,5 @@ put方法有多个版本，意味着允许你使用多种方式把数据写入�
 
 flip\(\)方法会把Buffer从writing模式切换到reading模式。调用了flip\(\)方法后，position将会被设置为0，limit将会被设置为position之前的值。
 
-换言之，执行了flip\(\)方法后，position将标记读的位置，limit标记写入的，最多可以读到的位置。
+换言之，执行了flip\(\)方法后，position将标记读的位置，limit标记读取写入的数据时，最多可以读到的位置。
 
