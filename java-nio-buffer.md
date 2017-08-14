@@ -151,7 +151,5 @@ byte aByte = buf.get();
 
 ## clear\(\)和compact\(\)
 
-当从Buffer中读完数据后，需要再次把Buffer标识为writing状态，以便于可以向buffer写入新的数据。
-
-
+当从Buffer中读完数据后，需要再次把Buffer标识为writing状态，以便于可以向buffer写入新的数据。执行clear\(\)和compact\(\)方法都可以的。
 
