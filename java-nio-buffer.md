@@ -163,11 +163,5 @@ byte aByte = buf.get();
 
 如果在buffer中存在一些还没有被读过的数据，开发者希望稍后再来读，在读之前会向buffer中写一些数据，那么就需要调用compact\(\)方法，而不是clear\(\)方法。
 
-
-
-
-
-
-
-
+执行compact\(\)方法时，会把所有未读过的数据拷贝到buffer的开始。然后把position设置为未读数据的下一个位置。limit将会被设置为capacity值，
 
