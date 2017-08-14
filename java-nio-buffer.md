@@ -208,3 +208,7 @@ compareTo方法主要是基于字典顺序来比较两个buffer的大小。假�
 
 Buffer在Java NIO扮演者重要的角色，甚至可以理解Java NIO API就是面向Buffer编程的。
 
+* Buffer存在reading和writing两个状态，
+
+
+
