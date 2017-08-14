@@ -198,5 +198,5 @@ equals方法主要是比较两个buffer是否相等。当buffer满足下面条�
 
 ### compareTo\(\)
 
-
+compareTo方法主要是比较两个buffer的大小，
 
