@@ -145,3 +145,9 @@ byte aByte = buf.get();
 
 当然，get也有多个版本可以调用。具体可以查看JavaDoc。
 
+## rewind\(\)方法
+
+
+
+
+
