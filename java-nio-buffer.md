@@ -155,5 +155,5 @@ byte aByte = buf.get();
 
 * clear\(\)方法
 
-如果执行了clear\(\)方法，position将会设置为0，limit将会被设置为capacity值。
+如果执行了clear\(\)方法，position将会设置为0，limit将会被设置为capacity值。换言之，buffer将会被清空，
 
