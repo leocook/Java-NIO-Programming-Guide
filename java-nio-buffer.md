@@ -107,7 +107,16 @@ CharBuffer buf = CharBuffer.allocate(1024);
 有两个方法可以把数据写入buffer：
 
 * 把数据从Channel中直接写入到buffer中；
+
+```
+int bytesRead = inChannel.read(buf); //read into buffer.
+```
+
 * 开发者自己编码把数据写入到Buffer中，例如调用buffer的put方法。
+
+```
+buf.put(127);   
+```
 
 
 
