@@ -4,7 +4,7 @@ Java NIO支持scatter和gather，scatter和gather这两个概念是使用在同�
 
 ## Scattering Reads
 
-一个“Scattering read”把数据从一个channel中读到多个buffer中去。下面是关于Scatter的一个插图：
+“Scattering read”是把数据从一个channel中读到多个buffer中去。下面是关于Scatter的一个插图：
 
 ![](/assets/impo1rt.png)
 
@@ -20,6 +20,10 @@ channel.read(bufferArray);
 ```
 
 > 注意：这种模式下，会先读数据到其中一个buffer中，直到该buffer被写满，再向下一个buffer中写数据。
+
+## Gathering Writes
+
+"gathering write"是把多个buffer的数据写入到一个channel中去。下面是对应的示意图：
 
 ![](/assets/im11111port.png)
 
