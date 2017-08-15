@@ -6,5 +6,19 @@ Java NIO支持scatter和gather，scatter和gather这两个概念是使用在同�
 
 一个“Scattering read”把数据从一个channel中读到多个buffer中去。下面是关于Scatter的一个插图：
 
+![](/assets/impo1rt.png)
+
+aaaa
+
+
+
+
+
+![](/assets/im11111port.png)
+
+
+
+
+
 
 
