@@ -2,7 +2,20 @@
 
 ## transferFrom\(\)方法
 
-FileChannel.transferFrom\(\)这个方法把数据从一个源source读取到FileChannel中去。
+FileChannel.transferFrom\(\)这个方法把数据从一个源source读取到FileChannel中去。下面是一个示例：
+
+```
+RandomAccessFile fromFile = new RandomAccessFile("fromFile.txt", "rw");
+FileChannel      fromChannel = fromFile.getChannel();
+
+RandomAccessFile toFile = new RandomAccessFile("toFile.txt", "rw");
+FileChannel      toChannel = toFile.getChannel();
+
+long position = 0;
+long count    = fromChannel.size();
+
+toChannel.transferFrom(fromChannel, position, count);
+```
 
 
 
