@@ -4,5 +4,5 @@ Selector是Java NIO的一个重要组件，用来检查一个或者多个channel
 
 ## 为什么使用Selector
 
-使用Selector的主要优势是可以使用单线程来处理多个channel，甚至所有channel。
+使用Selector的主要优势是可以使用单线程来处理多个channel，甚至所有channel。多线程间切换时会多余的消耗操作系统的资源，例如内存和cpu。
 
