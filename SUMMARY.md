@@ -4,4 +4,5 @@
 * [Java NIO概述](Java NIO概述.md)
 * [Java NIO Channel](java-nio-channel.md)
 * [Java NIO Buffer](java-nio-buffer.md)
+* [Java NIO Scatter\(分散\) / Gather\(聚集\)](java-nio-scatterfen-656329-gather-ju-96c629.md)
 
