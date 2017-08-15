@@ -23,7 +23,5 @@ toChannel.transferFrom(fromChannel, position, count);
 
 ## transferTo\(\)方法
 
-
-
-
+transferTo\(\)方法把数据从FileChannel中读到其它channel中去，
 
