@@ -20,5 +20,5 @@ Selector selector = Selector.open();
 
 ## 向Selector注册Channel
 
-
+为了能让Channel和Selector一起使用，需要向Selector注册Channel，
 
