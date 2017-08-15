@@ -23,5 +23,20 @@ toChannel.transferFrom(fromChannel, position, count);
 
 ## transferTo\(\)方法
 
-transferTo\(\)方法把数据从FileChannel中读到其它channel中去，
+transferTo\(\)方法把数据从FileChannel中读到其它channel中去，下面是一个简单的示例：
+
+```
+RandomAccessFile fromFile = new RandomAccessFile("fromFile.txt", "rw");
+FileChannel      fromChannel = fromFile.getChannel();
+
+RandomAccessFile toFile = new RandomAccessFile("toFile.txt", "rw");
+FileChannel      toChannel = toFile.getChannel();
+
+long position = 0;
+long count    = fromChannel.size();
+
+fromChannel.transferTo(position, count, toChannel);
+```
+
+
 
