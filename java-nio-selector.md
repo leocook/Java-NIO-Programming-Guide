@@ -38,3 +38,12 @@ SelectionKey key = channel.register(selector, SelectionKey.OP_READ);
 
 当Channel触发了某个事件时，也就意味着它已经准备好处理该事件了。当channel触发了connect事件后，意味着已经连接成功；当触发了accept事件后，意味着一个server socket已经成功的接收了客户端的请求；当channel触发了read事件后，意味着channel已经准备好被读取数据了；当channel触发了write事件后，意味着channel已经准备好被写入数据了。
 
+这四种事件，对应了SelectionKey类中的四个常量：
+
+* 1.SelectionKey.OP\_CONNECT
+* 2.SelectionKey.OP\_ACCEPT
+* 3.SelectionKey.OP\_READ
+* 4.SelectionKey.OP\_WRITE
+
+
+
