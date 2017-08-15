@@ -21,3 +21,9 @@ toChannel.transferFrom(fromChannel, position, count);
 
 另外，当source channel是SocketChannel时，只会把SocketChannel中现在已经缓存存在的数据取走，稍后再向SocketChannel中写入的数据并不会被取走。
 
+## transferTo\(\)方法
+
+
+
+
+
