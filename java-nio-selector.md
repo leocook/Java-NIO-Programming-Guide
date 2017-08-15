@@ -33,8 +33,8 @@ SelectionKey key = channel.register(selector, SelectionKey.OP_READ);
 
 * 1.Connect
 * 2.Accept
-* 3.Read\(\)
-* 4.Write\(\)
+* 3.Read
+* 4.Write
 
-
+当Channel触发了某个事件时，也就意味着它已经准备好处理该事件了。
 
