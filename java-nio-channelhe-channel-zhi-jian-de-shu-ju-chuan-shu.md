@@ -40,5 +40,3 @@ fromChannel.transferTo(position, count, toChannel);
 
 两段代码比较相似，主要的区别就是最后一行。
 
-SocketChannel作为目标channel时，当SocketChannel的缓存满了时，数据将会停止从FileChannel发送到SocketChannel中去。
-
