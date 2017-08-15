@@ -20,5 +20,12 @@ Selector selector = Selector.open();
 
 ## 向Selector注册Channel
 
-为了能让Channel和Selector一起使用，需要向Selector注册Channel，
+为了能让Channel和Selector一起使用，需要向Selector注册Channel，可以通过调用类似`SelectableChannel.register()`的方法来实现，例如下面：
+
+```
+channel.configureBlocking(false);
+SelectionKey key = channel.register(selector, SelectionKey.OP_READ);
+```
+
+
 
