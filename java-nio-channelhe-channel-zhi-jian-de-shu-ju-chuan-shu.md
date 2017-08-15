@@ -38,5 +38,5 @@ long count    = fromChannel.size();
 fromChannel.transferTo(position, count, toChannel);
 ```
 
-
+两段代码比较相似，主要的区别就是最后一行。
 
