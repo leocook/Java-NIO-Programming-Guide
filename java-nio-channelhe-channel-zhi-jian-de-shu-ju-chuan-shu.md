@@ -19,5 +19,5 @@ toChannel.transferFrom(fromChannel, position, count);
 
 参数position和count是用来表示从目标文件的position位置开始写入，并且最多可写入count这么多数据。如果source channel中的数据量比count值小，那么将会把source channel中的所有数据都读完。
 
-另外，当source channel是SocketChannel时，
+另外，当source channel是SocketChannel时，只会把SocketChannel中现在已经缓存存在的数据取走，
 
