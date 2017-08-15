@@ -8,17 +8,18 @@ Java NIO支持scatter和gather，scatter和gather这两个概念是使用在同�
 
 ![](/assets/impo1rt.png)
 
-aaaa
+下面是一个scattering read的例子：
 
+```
+ByteBuffer header = ByteBuffer.allocate(128);
+ByteBuffer body   = ByteBuffer.allocate(1024);
 
+ByteBuffer[] bufferArray = { header, body };
 
+channel.read(bufferArray);
+```
 
+> 注意：这种模式下，会先读数据到其中一个buffer中，直到该buffer被写满，再向下一个buffer中写数据。
 
 ![](/assets/im11111port.png)
-
-
-
-
-
-
 
