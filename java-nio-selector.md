@@ -6,3 +6,17 @@ Selector是Java NIO的一个重要组件，用来检查一个或者多个channel
 
 使用Selector的主要优势是可以使用单线程来处理多个channel，甚至所有channel。多线程间切换时会多余的消耗操作系统的资源，例如内存和cpu。所以使用较少的线程，系统的整体性能会表现得更好。
 
+下面就是一个线程操作三个channel的示意图：
+
+![](/assets/1.png)
+
+## 创建Selector
+
+直接调用静态方法open\(\)就可以创建一个Selector：
+
+```
+Selector selector = Selector.open();
+```
+
+
+
