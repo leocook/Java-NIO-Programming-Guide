@@ -27,5 +27,5 @@ channel.configureBlocking(false);
 SelectionKey key = channel.register(selector, SelectionKey.OP_READ);
 ```
 
-当使用Selector时，Channel必须要是非阻塞模式。因为FileChannel不能切换到非阻塞模式，所以FileChannel不能和Selector一起使用，。
+当使用Selector时，Channel必须要是非阻塞模式。因为FileChannel不能切换到非阻塞模式，所以FileChannel不能和Selector一起使用。
 
