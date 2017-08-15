@@ -40,7 +40,7 @@ ByteBuffer[] bufferArray = { header, body };
 channel.write(bufferArray);
 ```
 
-write\(\)方法将会按照buffer在数组中的位置以此把数据写入到channel中去，只有buffer中position到limit位置之间的数据才会被写入到channel中去。
+write\(\)方法将会按照buffer在数组中的位置以此把数据写入到channel中去，只有buffer中position到limit位置之间的数据才会被写入到channel中去。例如一个buffer的capacity位128，但只有58个字节的数据，那么只有这58个字节的数据才会被写入到channel中去。
 
 这种
 
