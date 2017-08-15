@@ -23,7 +23,24 @@ channel.read(bufferArray);
 
 ## Gathering Writes
 
-"gathering write"是把多个buffer的数据写入到一个channel中去。下面是对应的示意图：
+"gathering write"是把多个buffer的数据写入到一个channel中去。对应的示意图：
 
 ![](/assets/im11111port.png)
+
+下面是一个gathering write的例子：
+
+```
+ByteBuffer header = ByteBuffer.allocate(128);
+ByteBuffer body   = ByteBuffer.allocate(1024);
+
+//write data into buffers
+
+ByteBuffer[] bufferArray = { header, body };
+
+channel.write(bufferArray);
+```
+
+write\(\)方法将会按照buffer在数组中的位置以此把数据写入到channel中去，只有buffer中position到limit位置之间的数据才会被写入到channel中去。
+
+这种
 
