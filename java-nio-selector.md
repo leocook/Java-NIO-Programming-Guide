@@ -77,8 +77,8 @@ int interestSet = selectionKey.interestOps();
 boolean isInterestedInAccept  = interestSet & SelectionKey.OP_ACCEPT;
 boolean isInterestedInConnect = interestSet & SelectionKey.OP_CONNECT;
 boolean isInterestedInRead    = interestSet & SelectionKey.OP_READ;
-boolean isInterestedInWrite   = interestSet & SelectionKey.OP_WRITE;  
+boolean isInterestedInWrite   = interestSet & SelectionKey.OP_WRITE;
 ```
 
-
+其实在这里不难发现，
 
