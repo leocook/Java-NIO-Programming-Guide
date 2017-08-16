@@ -55,5 +55,15 @@ int interestSet = SelectionKey.OP_READ | SelectionKey.OP_WRITE;
 
 从前面的例子中可以看出，当调用Channel的register\(\)方法来把channel注册到Selector上时，会返回一个SelectionKey对象。SelectionKey对象有下面这几个属性：
 
+* Interest set
+
+* Read set
+
+* Channel
+
+* Selector
+
+* Attached object（附加对象，可选）
+
 
 
