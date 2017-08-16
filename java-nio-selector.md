@@ -69,3 +69,16 @@ int interestSet = SelectionKey.OP_READ | SelectionKey.OP_WRITE;
 
 “Interest set”表示在把channel注册到selector上时，监听的所有事件集合。可以通过SelectionKey对象来获取监听的事件集合，也可以设置新的监听集合。
 
+```
+//获取监听的时间集合
+int interestSet = selectionKey.interestOps();
+
+//判断是否监听了指定的事件
+boolean isInterestedInAccept  = interestSet & SelectionKey.OP_ACCEPT;
+boolean isInterestedInConnect = interestSet & SelectionKey.OP_CONNECT;
+boolean isInterestedInRead    = interestSet & SelectionKey.OP_READ;
+boolean isInterestedInWrite   = interestSet & SelectionKey.OP_WRITE;  
+```
+
+
+
