@@ -65,5 +65,9 @@ int interestSet = SelectionKey.OP_READ | SelectionKey.OP_WRITE;
 
 * Attached object（附加对象，可选）
 
+### Interest set
+
+
+
 
 
