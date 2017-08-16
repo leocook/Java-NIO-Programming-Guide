@@ -67,5 +67,5 @@ int interestSet = SelectionKey.OP_READ | SelectionKey.OP_WRITE;
 
 ### Interest set
 
-“Interest set”表示你所关注的，
+“Interest set”表示在把channel注册到selector上时，你所关注的事件集合，
 
