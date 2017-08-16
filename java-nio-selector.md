@@ -67,11 +67,5 @@ int interestSet = SelectionKey.OP_READ | SelectionKey.OP_WRITE;
 
 ### Interest set
 
-“Interest set”
-
-
-
-
-
-
+“Interest set”表示你所关注的，
 
