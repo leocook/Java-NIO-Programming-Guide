@@ -45,5 +45,15 @@ SelectionKey key = channel.register(selector, SelectionKey.OP_READ);
 * 3.SelectionKey.OP\_READ
 * 4.SelectionKey.OP\_WRITE
 
+如果想监听多个事件，可以使用`或`运算，例如：
+
+```
+int interestSet = SelectionKey.OP_READ | SelectionKey.OP_WRITE;
+```
+
+## SelectionKey
+
+
+
 
 
