@@ -4,5 +4,9 @@ Java NIO中的FileChannel是一个用来连接文件的channel。使用FileChann
 
 > 注意：FileChannel不能设置非阻塞模式，只能一直在阻塞模式下运行。
 
+## 打开一个FileChannel
+
+
+
 
 
