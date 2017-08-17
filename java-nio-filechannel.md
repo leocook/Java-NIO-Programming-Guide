@@ -64,5 +64,5 @@ long pos = channel.position();
 channel.position(pos +123);
 ```
 
-当设置position的值为文件的尾部位置，
+当设置position的值为文件的尾部位置时，
 
