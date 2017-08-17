@@ -23,5 +23,8 @@ ByteBuffer buf = ByteBuffer.allocate(48);
 int bytesRead = inChannel.read(buf);
 ```
 
+* 第一步：分配Buffer，数据是先从FileChannel中读到Buffer中去的；
+* 第二步：
+
 
 
