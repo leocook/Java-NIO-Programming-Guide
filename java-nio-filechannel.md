@@ -28,13 +28,21 @@ int bytesRead = inChannel.read(buf);
 
 ## 向FileChannel中写入数据
 
+可以调用FileChannel的write\(buffer\)方法来把buffer中的数据写入到FileChannel中去，下面是一个例子：
+
+```
+String newData = "New String to write to file..." + System.currentTimeMillis();
+
+ByteBuffer buf = ByteBuffer.allocate(48);
+buf.clear();
+buf.put(newData.getBytes());
+
+buf.flip();
+
+while(buf.hasRemaining()) {
+    channel.write(buf);
+}
+```
 
 
-
-
-
-
-
-
-在
 
