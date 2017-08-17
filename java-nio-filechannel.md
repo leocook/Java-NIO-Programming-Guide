@@ -54,5 +54,15 @@ channel.close();
 
 ## FileChannel的Position
 
-当向FileChannel读写数据时，其实操作的是Channel的一个指定的position。
+当向FileChannel读写数据时，其实操作的是Channel的一个指定的position。可以调用position\(\)方法来获取到FileChannel中当前的position位置。
+
+当然，也可以调用FileChannel的position\(long pos\)方法来设置position，下面是一段例子：
+
+```
+long pos channel.position();
+
+channel.position(pos +123);
+```
+
+
 
