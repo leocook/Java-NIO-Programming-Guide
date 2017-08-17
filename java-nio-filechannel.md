@@ -6,5 +6,5 @@ Java NIO中的FileChannel是一个用来连接文件的channel。使用FileChann
 
 ## 打开一个FileChannel
 
-在使用FileChannel之前，你必须要先打开它。FileChannel不能直接创建，而是要通过输入输出流（例如：InputStream, OutputStream、或者RandomAccessFile）来创建，例如
+在使用FileChannel之前，你必须要先打开它。FileChannel不能直接创建，而是要通过输入输出流（例如：InputStream, OutputStream、或者RandomAccessFile）来创建，例如：
 
