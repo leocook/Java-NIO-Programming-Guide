@@ -54,5 +54,5 @@ channel.close();
 
 ## FileChannel的Position
 
-
+当向FileChannel读写数据时，其实操作的是Channel的一个指定的position。
 
