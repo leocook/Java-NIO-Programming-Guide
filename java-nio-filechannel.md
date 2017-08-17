@@ -44,5 +44,13 @@ while(buf.hasRemaining()) {
 }
 ```
 
+## 关闭FileChannel
+
+当使用完FileChannel后，必须关闭它：
+
+```
+channel.close(); 
+```
+
 
 
