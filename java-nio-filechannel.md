@@ -6,7 +6,5 @@ Java NIO中的FileChannel是一个用来连接文件的channel。使用FileChann
 
 ## 打开一个FileChannel
 
-
-
-
+在使用FileChannel之前，你必须要先打开它。
 
