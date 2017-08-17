@@ -24,7 +24,7 @@ int bytesRead = inChannel.read(buf);
 ```
 
 * 第一步：分配Buffer，数据是先从FileChannel中读到Buffer中去的；
-* 第二步：
+* 第二步：调用FileChannel的read方法，把数据读到buffer中去。read方法返回的int整数表示读了多少数据到buffer中去，当该整数为-1时，
 
 
 
