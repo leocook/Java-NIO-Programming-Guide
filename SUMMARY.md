@@ -7,4 +7,5 @@
 * [Java NIO Scatter\(分散\) / Gather\(聚集\)](java-nio-scatterfen-656329-gather-ju-96c629.md)
 * [Java NIO Channel和Channel之间的数据传输](java-nio-channelhe-channel-zhi-jian-de-shu-ju-chuan-shu.md)
 * [Java NIO Selector](java-nio-selector.md)
+* [Java NIO FileChannel](java-nio-filechannel.md)
 
