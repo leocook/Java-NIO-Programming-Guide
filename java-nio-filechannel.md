@@ -71,8 +71,10 @@ channel.position(pos +123);
 FileChannel的大小也就是它所连接的文件大小，可以通过调用FileChannel的size\(\)方法来获得。下面是个例子：
 
 ```
-long fileSize = channel.size(); 
+long fileSize = channel.size();
 ```
+
+## 截取FileChannel
 
 
 
