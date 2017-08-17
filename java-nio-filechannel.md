@@ -64,5 +64,7 @@ long pos = channel.position();
 channel.position(pos +123);
 ```
 
-当设置position的值为文件的尾部位置时，
+当设置position的值为文件的尾部位置时。若从channel中读数据，则返回-1；若向channel中写入数据，则可以正常写入。
+
+FileChannel的大小
 
