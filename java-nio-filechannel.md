@@ -15,5 +15,13 @@ FileChannel      inChannel = aFile.getChannel();
 
 ## 从FileChannel中读取数据
 
+可通过调用FileChannel的read方法来读取数据，下面是一个例子：
+
+```
+ByteBuffer buf = ByteBuffer.allocate(48);
+
+int bytesRead = inChannel.read(buf);
+```
+
 
 
