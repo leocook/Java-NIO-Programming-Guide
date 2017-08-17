@@ -59,10 +59,10 @@ channel.close();
 当然，也可以调用FileChannel的position\(long pos\)方法来设置position，下面是一段例子：
 
 ```
-long pos channel.position();
+long pos = channel.position();
 
 channel.position(pos +123);
 ```
 
-
+当设置position的值为文件的尾部位置，
 
