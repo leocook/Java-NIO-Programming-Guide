@@ -13,5 +13,7 @@ RandomAccessFile aFile     = new RandomAccessFile("data/nio-data.txt", "rw");
 FileChannel      inChannel = aFile.getChannel();
 ```
 
+从FileChannel中读取数据
+
 
 
