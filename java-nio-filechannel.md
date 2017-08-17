@@ -49,8 +49,10 @@ while(buf.hasRemaining()) {
 当使用完FileChannel后，必须关闭它：
 
 ```
-channel.close(); 
+channel.close();
 ```
+
+## FileChannel的Position
 
 
 
