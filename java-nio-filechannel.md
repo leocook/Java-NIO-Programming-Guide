@@ -76,5 +76,11 @@ long fileSize = channel.size();
 
 ## 截取FileChannel
 
+可以调用方法FileChannel.truncate\(\)来截取FileChannel。如些：
 
+```
+FileChannel newChannel = channel.truncate(1024);
+```
+
+这段代码表示截取了channel的前1024个字节。
 
