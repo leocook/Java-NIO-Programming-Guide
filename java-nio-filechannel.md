@@ -84,3 +84,7 @@ FileChannel newChannel = channel.truncate(1024);
 
 这段代码表示截取了channel的前1024个字节数据，并用次来创建一个新的FileChannel。当截取的长度大于原来Channel的长度后，则新的channel长度和原来channel的长度一致。
 
+## FileChannel的force方法
+
+
+
