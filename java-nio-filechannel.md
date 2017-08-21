@@ -88,3 +88,5 @@ FileChannel newChannel = channel.truncate(1024);
 
 FileChannel.force\(\)方法把所有没有写的数据，从channel中写到disk中去。为了提高性能，Java NIO会把Channel中的数据先缓存在内存中，内存满的时候会有刷盘动作，当调用FileChannel.force\(\)方法后数据将会被强行刷到磁盘中。
 
+force\(\)方法可以传入一个布尔类型的参数，
+
