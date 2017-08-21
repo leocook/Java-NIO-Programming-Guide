@@ -44,7 +44,7 @@ while(buf.hasRemaining()) {
 }
 ```
 
-## 关闭FileChannel
+## FileChannel的close方法
 
 当使用完FileChannel后，必须关闭它：
 
@@ -52,7 +52,7 @@ while(buf.hasRemaining()) {
 channel.close();
 ```
 
-## FileChannel的Position
+## FileChannel的Position方法
 
 当向FileChannel读写数据时，其实操作的是Channel的一个指定的position。可以调用position\(\)方法来获取到FileChannel中当前的position位置。
 
