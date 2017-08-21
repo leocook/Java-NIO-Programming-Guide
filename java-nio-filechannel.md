@@ -74,7 +74,7 @@ FileChannel的大小也就是它所连接的文件大小，可以通过调用Fil
 long fileSize = channel.size();
 ```
 
-## 截取FileChannel
+## FileChannel的truncate方法
 
 可以调用方法FileChannel.truncate\(size\)来截取FileChannel。如些：
 
