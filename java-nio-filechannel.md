@@ -66,7 +66,7 @@ channel.position(pos +123);
 
 当设置position的值为文件的尾部位置时。若从channel中读数据，则返回-1；若向channel中写入数据，则可以正常写入。
 
-## FileChannel的大小
+## FileChannel的size方法
 
 FileChannel的大小也就是它所连接的文件大小，可以通过调用FileChannel的size\(\)方法来获得。下面是个例子：
 
