@@ -57,7 +57,7 @@ while(/*判断buffer中是否还有数据*/buf.hasRemaining()) {
 
 当我们可以设置SocketChannel为非阻塞模式时，connect\(\)，read\(\)以及write\(\)这些方法将会以异步的方式来执行。
 
-### connect\(\)
+### connect\(\)方法
 
 SocketChannel在非阻塞模式下时执行了connect\(\)方法，可能会在连接还没有创建完成时connect\(\)方法就已经return了。那么在使用connect前就需要验证connect是否已经创建完成，可以通过调用finishConnect\(\)方法来完成验证，例如：
 
@@ -69,6 +69,14 @@ while(! socketChannel.finishConnect() ){
     //wait, or do something else...    
 }
 ```
+
+### write\(\)方法
+
+在非阻塞模式下，可能在write方法还没有写入任何数据时，就已经返回了。所以需要把write\(\)方法放在循环中执行，就如上面的write例子。
+
+### read\(\)方法
+
+
 
 
 
