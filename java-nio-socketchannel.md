@@ -76,6 +76,12 @@ while(! socketChannel.finishConnect() ){
 
 ### read\(\)方法
 
+在非阻塞模式下，read方法可能在还没有读到任何数据的时候就返回了。所以在执行read方法的时候需要根据返回的整数来判断读取到的数据量。
+
+### 使用Selector时的非阻塞模式
+
+
+
 
 
 
