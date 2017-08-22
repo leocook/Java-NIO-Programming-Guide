@@ -35,5 +35,9 @@ ByteBuffer buf = ByteBuffer.allocate(48);
 int bytesRead = socketChannel.read(buf);
 ```
 
+## 把数据写入到SocketChannel中去
+
+
+
 
 
