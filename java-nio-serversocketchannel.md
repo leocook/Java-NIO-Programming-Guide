@@ -34,7 +34,26 @@ ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
 serverSocketChannel.close();
 ```
 
-## 监听网络连接
+## 监听网络请求
 
-可以通过执行方法ServerSocketChannel.accept\(\)来监听网络连接，当accept方法返回时，将会返回一个SocketChannel。accept方法会一直阻塞，直到有新的网络连接出现。
+可以通过执行方法ServerSocketChannel.accept\(\)来监听网络连接，当accept方法返回时，将会返回一个SocketChannel。accept方法会一直阻塞，直到有新的网络请求出现。
+
+如果不想只监听一次网络请求，可以使用轮询的当时执行accept方法：
+
+```
+while(true){
+    SocketChannel socketChannel =
+            serverSocketChannel.accept();
+
+    //do something with socketChannel...
+}
+```
+
+## 非阻塞模式
+
+
+
+
+
+
 
