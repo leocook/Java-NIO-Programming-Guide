@@ -67,6 +67,7 @@ while(true){
     SocketChannel socketChannel =
             serverSocketChannel.accept();
 
+    //check socketChannel 是不是空
     if(socketChannel != null){
         //do something with socketChannel...
         }
