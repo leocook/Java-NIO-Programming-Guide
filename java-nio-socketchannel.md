@@ -59,13 +59,5 @@ while(/*判断buffer中是否还有数据*/buf.hasRemaining()) {
 
 ### connect\(\)
 
-
-
-
-
-
-
-
-
-
+SocketChannel在非阻塞模式下时执行了connect\(\)方法，可能会在连接还没有创建完成时connect\(\)方法就已经return了。
 
