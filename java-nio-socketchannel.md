@@ -14,5 +14,7 @@ SocketChannel socketChannel = SocketChannel.open();
 socketChannel.connect(new InetSocketAddress("http://www.baidu.com", 80));
 ```
 
+## SocketChannel的close\(\)方法
+
 
 
