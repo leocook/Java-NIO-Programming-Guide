@@ -22,5 +22,7 @@ socketChannel.connect(new InetSocketAddress("http://www.baidu.com", 80));
 socketChannel.close();
 ```
 
+## 从SocketChannel中读取数据
+
 
 
