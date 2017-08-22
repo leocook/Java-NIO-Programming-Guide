@@ -51,5 +51,23 @@ while(true){
 
 ## 非阻塞模式
 
-ServerSocketChannel可以被设置为非阻塞模式，在非阻塞模式下，在没有网络请求的情况下accept方法也会立马返回，所以有可能返回个null。
+ServerSocketChannel可以被设置为非阻塞模式，在非阻塞模式下，在没有网络请求的情况下accept方法也会立马返回，所以有可能返回个null。在非阻塞模式下获取到SocketChannel对象的时候，需要判断一下该对象是否为空：
+
+```
+ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+
+serverSocketChannel.socket().bind(new InetSocketAddress(9999));
+serverSocketChannel.configureBlocking(false);
+
+while(true){
+    SocketChannel socketChannel =
+            serverSocketChannel.accept();
+
+    if(socketChannel != null){
+        //do something with socketChannel...
+        }
+}
+```
+
+
 
