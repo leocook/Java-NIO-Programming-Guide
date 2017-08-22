@@ -37,29 +37,5 @@ int bytesRead = socketChannel.read(buf);
 
 ## 把数据写入到SocketChannel中去
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+可以调用SocketChannel的write方法，
 
