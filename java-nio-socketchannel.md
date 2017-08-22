@@ -16,5 +16,11 @@ socketChannel.connect(new InetSocketAddress("http://www.baidu.com", 80));
 
 ## SocketChannel的close\(\)方法
 
+在调用了SocketChannel对象的close方法后，将会关闭SocketChannel，例如：
+
+```
+socketChannel.close();
+```
+
 
 
