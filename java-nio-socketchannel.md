@@ -24,5 +24,13 @@ socketChannel.close();
 
 ## 从SocketChannel中读取数据
 
+可以调用SocketChannel对象的read方法来读取channel中的数据：
+
+```
+ByteBuffer buf = ByteBuffer.allocate(48);
+
+int bytesRead = socketChannel.read(buf);
+```
+
 
 
