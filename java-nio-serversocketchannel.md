@@ -20,13 +20,11 @@ while(true){
 
 ## 打开一个ServerSocketChannel
 
-AA
+可通过执行ServerSocketChannel.open\(\)方法来打开一个channel，如下面的例子：
 
 ```
 ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
 ```
-
-
 
 
 
