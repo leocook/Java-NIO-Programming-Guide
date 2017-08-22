@@ -49,7 +49,7 @@ buf.put(newData.getBytes());
 buf.flip();
 
 while(/*判断buffer中是否还有数据*/buf.hasRemaining()) {
-    channel.write(buf);//写
+    channel.write(buf);//把buffer中数据写入channel
 }
 ```
 
