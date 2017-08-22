@@ -36,7 +36,5 @@ serverSocketChannel.close();
 
 ## 监听网络连接
 
-可以通过执行方法ServerSocketChannel.accept\(\)来监听网络连接，当accept方法返回时，将会返回一个SocketChannel。accept方法会一直阻塞，直到有网络连接到达。
-
-
+可以通过执行方法ServerSocketChannel.accept\(\)来监听网络连接，当accept方法返回时，将会返回一个SocketChannel。accept方法会一直阻塞，直到有新的网络连接出现。
 
