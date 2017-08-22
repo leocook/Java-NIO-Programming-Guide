@@ -37,5 +37,21 @@ int bytesRead = socketChannel.read(buf);
 
 ## 把数据写入到SocketChannel中去
 
-可以调用SocketChannel的write方法，
+可以调用SocketChannel的write方法，把buffer作为参数，然后把数据写入，例如：
+
+```
+String newData = "New String to write to file..." + System.currentTimeMillis();
+
+ByteBuffer buf = ByteBuffer.allocate(48);
+buf.clear();
+buf.put(newData.getBytes());
+
+buf.flip();
+
+while(buf.hasRemaining()) {
+    channel.write(buf);
+}
+```
+
+
 
