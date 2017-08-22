@@ -28,7 +28,11 @@ ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
 
 ## ServerSocketChannel的close方法
 
+可通过执行ServerSocketChannel.close\(\)方法来关闭channel，如下面的例子：
 
+```
+serverSocketChannel.close();
+```
 
 
 
