@@ -53,5 +53,19 @@ while(/*判断buffer中是否还有数据*/buf.hasRemaining()) {
 }
 ```
 
+## 非阻塞模式
+
+当我们可以设置SocketChannel为非阻塞模式时，connect\(\)，read\(\)以及write\(\)这些方法将会以异步的方式来执行。
+
+### connect\(\)
+
+
+
+
+
+
+
+
+
 
 
