@@ -59,5 +59,16 @@ while(/*判断buffer中是否还有数据*/buf.hasRemaining()) {
 
 ### connect\(\)
 
-SocketChannel在非阻塞模式下时执行了connect\(\)方法，可能会在连接还没有创建完成时connect\(\)方法就已经return了。
+SocketChannel在非阻塞模式下时执行了connect\(\)方法，可能会在连接还没有创建完成时connect\(\)方法就已经return了。那么在使用connect前就需要验证connect是否已经创建完成，可以通过调用finishConnect\(\)方法来完成验证，例如：
+
+```
+socketChannel.configureBlocking(false);
+socketChannel.connect(new InetSocketAddress("http://www.baidu.com", 80));
+
+while(! socketChannel.finishConnect() ){
+    //wait, or do something else...    
+}
+```
+
+
 
