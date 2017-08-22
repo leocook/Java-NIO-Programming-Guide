@@ -18,5 +18,15 @@ while(true){
 }
 ```
 
+## 打开一个ServerSocketChannel
+
+AA
+
+```
+ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+```
+
+
+
 
 
