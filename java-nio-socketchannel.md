@@ -80,9 +80,7 @@ while(! socketChannel.finishConnect() ){
 
 ### 使用Selector时的非阻塞模式
 
-
-
-
+非阻塞模式下的SocketChannel在和Selector结合使用时，效果会更好。在Selector上注册一个或多个SocketChannel的时候，可以请求Selector来获取到已经准备就绪的channel，并进行读写操作。
 
 
 
