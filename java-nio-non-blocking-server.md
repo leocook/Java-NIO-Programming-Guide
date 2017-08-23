@@ -47,7 +47,13 @@ int bytesSent = channel.send(buf, new InetSocketAddress("www.baidu.com", 80));
 
 ## 连接一个指定的端口
 
-UDP协议是无连接的网络传输协议，如果和远程端口建立一个连接的话，其实并不能建立一个真正的连接，而是锁定DatagramChannel，使其只能向指定的端口读写数据。
+UDP协议是无连接的网络传输协议，如果和远程端口建立一个连接的话，其实并不能建立一个真正的连接，而是锁定DatagramChannel，使其只能向指定的端口读写数据。下面是一个例子：
+
+* “连接”远程端口
+
+```
+channel.connect(new InetSocketAddress("jenkov.com", 80));
+```
 
 
 
