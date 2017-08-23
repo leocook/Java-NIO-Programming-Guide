@@ -4,7 +4,12 @@ DatagramChannel是Java NIO中发送和接收UDP包的channel。因为UDP是无�
 
 ## DatagramChannel的open方法
 
+下面代码是怎么打开一个DatagramChannel：
 
+```
+DatagramChannel channel = DatagramChannel.open();
+channel.socket().bind(new InetSocketAddress(9999));
+```
 
-
+这样就可以创建一个DatagramChannel，用来接收本机的9999端口UDP数据包。
 
