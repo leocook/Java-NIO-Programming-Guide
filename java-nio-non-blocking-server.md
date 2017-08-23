@@ -33,13 +33,14 @@ receive方法会把接收到的UDP数据包里的数据拷贝到buffer中去。�
 ```
 String newData = "New String to write to file..."
                     + System.currentTimeMillis();
-    
+
 ByteBuffer buf = ByteBuffer.allocate(48);
 buf.clear();
 buf.put(newData.getBytes());
 buf.flip();
 
-int bytesSent = channel.send(buf, new InetSocketAddress("jenkov.com", 80));
+//向www.baidu.com的80端口发送UDP数据包
+int bytesSent = channel.send(buf, new InetSocketAddress("www.baidu.com", 80));
 ```
 
 
