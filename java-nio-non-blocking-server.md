@@ -43,5 +43,5 @@ buf.flip();
 int bytesSent = channel.send(buf, new InetSocketAddress("www.baidu.com", 80));
 ```
 
-
+这个例子实现了向远程端口发送UDP数据，如果该远程主机端口上没有被监听，那么数据发送后将不会产生任何实际效果。
 
