@@ -24,7 +24,9 @@ buf.clear();
 channel.receive(buf);
 ```
 
-receive方法
+receive方法会把接收到的UDP数据包里的数据拷贝到buffer中去。如果接收到的数据包中数据大小大于buffer的容量，多余出来的数据将会被丢掉。
 
+## 使用send方法发送数据
 
+可以调用DatagramChannel对象的send方法来发送数据：
 
