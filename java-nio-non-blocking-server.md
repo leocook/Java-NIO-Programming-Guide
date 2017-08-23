@@ -13,3 +13,7 @@ channel.socket().bind(new InetSocketAddress(9999));
 
 这样就可以创建一个DatagramChannel，用来接收本机的9999端口上的UDP数据包。
 
+## 使用receive方法接收数据
+
+
+
