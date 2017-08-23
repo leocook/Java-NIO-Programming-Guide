@@ -15,5 +15,16 @@ channel.socket().bind(new InetSocketAddress(9999));
 
 ## 使用receive方法接收数据
 
+可以调用DatagramChannel对象的receive方法来接收数据：
+
+```
+ByteBuffer buf = ByteBuffer.allocate(48);
+buf.clear();
+
+channel.receive(buf);
+```
+
+receive方法
+
 
 
