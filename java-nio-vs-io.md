@@ -93,7 +93,7 @@ int bytesRead = inChannel.read(buffer);
 
 假设一下，在第一次执行了read\(buffer\)方法后，读到buffer中的数据只是一行数据的一半，例如“Name: Ah”，很显然无法处理这个数据，只能等剩下的所有数据都写入到buffer中去之后，才能处理buffer中的数据。
 
-所以，怎么才能确定buffer中的数据足够用来处理呢？很显然，无法确定。唯一的办法就是查看Buffer中的数据，在数据还没有全部写入到buffer中之前你需要多次检查buffer中的数据。这种方式不仅效率低，而且程序设计起来巨复杂：
+所以，怎么才能确定buffer中的数据足够用来处理呢？很显然，无法确定。唯一的办法就是查看Buffer中的数据，在数据还没有完整写入到buffer中之前你需要多次检查buffer中的数据。这种方式不仅效率低，而且程序设计起来巨复杂：
 
 ```
 ByteBuffer buffer = ByteBuffer.allocate(48);
@@ -105,9 +105,9 @@ while(! bufferFull(bytesRead) ) {
 }
 ```
 
-bufferFull方法将会记录读进buffer中去的数据，当buffer诗句完整时返回true，否则返回false。换句话说，当数据可以被处理时返回true，否则返回false。
+bufferFull方法将会记录读进buffer中去的数据，当buffer完整时返回true，否则返回false。换句话说，当数据可以被处理时返回true，否则返回false。
 
-bufferFull\(\)方法将会扫描buffer，但需要保证在整个扫描过程中buffer的过程中，buffer的状态不会发生变化。否则的话接下来再把数据读到buffer中去时无法保证数据能写到bufferd的正确位置上。
+bufferFull\(\)方法将会扫描buffer，但需要保证在整个扫描过程中buffer的过程中，buffer的状态不能发生变化。否则的话接下来再把数据读到buffer中去时无法保证数据能写到bufferd的正确位置上。
 
 下面是上述过程中的插图：
 
@@ -116,6 +116,12 @@ bufferFull\(\)方法将会扫描buffer，但需要保证在整个扫描过程中
 ## 总结
 
 NIO允许你通过单个线程来管理多个Channel，但是解析数据将比使用阻塞IO更加复杂。
+
+如果需要同时管理上千个连接，但是每个连接只发送少量的数据，例如聊天系统，在使用NIO来实现server端将会变得很有优势。同样的道理，如果你需要和其它计算机保持着大量的连接，例如P2P网络，使用单个线程来管理你的对外接口将会很有优势。下面是一个线程处理着大量连接的示意图：
+
+![](/assets/14.png)
+
+如果你有少量数据传输很频繁的线程，在同一时间将会发送大量数据，那么使用标准的IO库来实现将会是首选方案。
 
 A
 
