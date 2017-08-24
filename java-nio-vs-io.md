@@ -52,7 +52,29 @@ NIO和标准IO的API调用很显然是不一样的。标准IO并不是直接从I
 
 ### 处理数据的过程
 
-用NIO或者标准IO会影响到处理数据的过程。
+选用NIO或者标准IO会影响到处理数据的过程。
+
+在标准IO中，可以使用InputStream或者Reader来读数据。例如处理下面的纯文本数据：
+
+```
+Name: Anna
+Age: 25
+Email: anna@mailserver.com
+Phone: 1234567890
+```
+
+这个文本数据流被处理如下：
+
+```
+InputStream input = ... ; // 获取到流
+
+BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+
+String nameLine   = reader.readLine();
+String ageLine    = reader.readLine();
+String emailLine  = reader.readLine();
+String phoneLine  = reader.readLine();
+```
 
 > 非阻塞模式下，数据下去之后，怎么保证数据可以写入成功呢。
 
