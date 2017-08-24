@@ -84,6 +84,12 @@ String phoneLine  = reader.readLine();
 
 使用NIO来实现的话，将会有所不同。
 
+```
+ByteBuffer buffer = ByteBuffer.allocate(48);
+
+int bytesRead = inChannel.read(buffer);
+```
+
 > 非阻塞模式下，数据下去之后，怎么保证数据可以写入成功呢。
 
 
