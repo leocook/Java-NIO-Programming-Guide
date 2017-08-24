@@ -86,9 +86,10 @@ String phoneLine  = reader.readLine();
 
 ```
 ByteBuffer buffer = ByteBuffer.allocate(48);
-
 int bytesRead = inChannel.read(buffer);
 ```
+
+注意第二行代码，把数据从channel读到ByteBuffer中，
 
 > 非阻塞模式下，数据下去之后，怎么保证数据可以写入成功呢。
 
