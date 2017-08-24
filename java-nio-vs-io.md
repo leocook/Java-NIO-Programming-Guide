@@ -76,6 +76,8 @@ String emailLine  = reader.readLine();
 String phoneLine  = reader.readLine();
 ```
 
+注意，数据处理的状态可由程序执行的状态得知。换句话说，当执行了第一个reader.readLine\(\)时候，你就知道第一行数据已经完全读完了。redLine\(\)方法会一直阻塞，直到一整行的数据都被读完。
+
 > 非阻塞模式下，数据下去之后，怎么保证数据可以写入成功呢。
 
 
