@@ -52,8 +52,8 @@ UDP协议是无连接的网络传输协议，如果和远程端口建立一个�
 * “连接”远程端口
 
 ```
-channel.connect(new InetSocketAddress("jenkov.com", 80));
+channel.connect(new InetSocketAddress("www.baidu.com", 80));
 ```
 
-
+查看源码可以发现，connect方法里会对指定的地址和端口做check的。
 
