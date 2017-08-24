@@ -23,5 +23,37 @@ Pipe pipe = Pipe.open();
 Pipe.SinkChannel sinkChannel = pipe.sink();
 ```
 
+可以调用SinkChannel的write方法来向SinkChannel中写入数据：
+
+```
+String newData = "New String to write to file..." + System.currentTimeMillis();
+
+ByteBuffer buf = ByteBuffer.allocate(48);
+buf.clear();
+buf.put(newData.getBytes());
+
+buf.flip();
+
+while(buf.hasRemaining()) {
+    sinkChannel.write(buf);
+}
+```
+
+## 从Pipe中读取数据
+
+可以使用SourceChannel来读取Pipe中的数据：
+
+```
+Pipe.SourceChannel sourceChannel = pipe.source();
+```
+
+然后调用SourceChannel的read方法来读取数据：
+
+```
+ByteBuffer buf = ByteBuffer.allocate(48);
+
+int bytesRead = inChannel.read(buf);
+```
+
 
 
