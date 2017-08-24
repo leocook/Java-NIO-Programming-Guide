@@ -93,7 +93,27 @@ int bytesRead = inChannel.read(buffer);
 
 假设一下，在第一次执行了read\(buffer\)方法后，读到buffer中的数据只是一行数据的一半，例如“Name: Ah”，很显然无法处理这个数据，只能等剩下的所有数据都写入到buffer中去之后，才能处理buffer中的数据。
 
-所以，怎么才能确定buffer中的数据足够用来处理呢？
+所以，怎么才能确定buffer中的数据足够用来处理呢？很显然，无法确定。唯一的办法就是查看Buffer中的数据，在数据还没有全部写入到buffer中之前你需要多次检查buffer中的数据。这种方式不仅效率低，而且程序设计起来巨复杂：
+
+```
+ByteBuffer buffer = ByteBuffer.allocate(48);
+
+int bytesRead = inChannel.read(buffer);
+
+while(! bufferFull(bytesRead) ) {
+    bytesRead = inChannel.read(buffer);
+}
+```
+
+bufferFull方法将会
+
+A
+
+A
+
+A
+
+A
 
 > 非阻塞模式下，数据下去之后，怎么保证数据可以写入成功呢。
 
