@@ -55,5 +55,5 @@ ByteBuffer buf = ByteBuffer.allocate(48);
 int bytesRead = inChannel.read(buf);
 ```
 
-
+返回的整数bytesRead表示读出来并写入buffer中的数据量。
 
