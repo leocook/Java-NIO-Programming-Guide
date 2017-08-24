@@ -14,5 +14,7 @@ Java NIO Pipe是两个线程之间数据单向传输的连接管道。一个Pipe
 Pipe pipe = Pipe.open();
 ```
 
+## 把数据写入Pipe
+
 
 
