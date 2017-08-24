@@ -48,7 +48,7 @@ Java NIO的Selector允许单个线程同时监控多个channel的读写等事件
 
 ### API调用
 
-NIO和标准IO的API调用很显然是不一样的。
+NIO和标准IO的API调用很显然是不一样的。标准IO并不是直接从InputStream中读取数据，而是借助buffer类，先读到buffer中，然后再做数据上的处理。
 
 > 非阻塞模式下，数据下去之后，怎么保证数据可以写入成功呢。
 
