@@ -16,5 +16,12 @@ Pipe pipe = Pipe.open();
 
 ## 把数据写入Pipe
 
+可以使用SinkChannel来向Pipe中写入数据，下面是一个例子：
+
+```
+获取到SinkChannel对象
+Pipe.SinkChannel sinkChannel = pipe.sink();
+```
+
 
 
