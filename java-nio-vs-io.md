@@ -109,6 +109,16 @@ bufferFull方法将会记录读进buffer中去的数据，当buffer诗句完整�
 
 bufferFull\(\)方法将会扫描buffer，但需要保证在整个扫描过程中buffer的过程中，buffer的状态不会发生变化。否则的话接下来再把数据读到buffer中去时无法保证数据能写到bufferd的正确位置上。
 
+下面是上述过程中的插图：
+
+![](/assets/13.png)
+
+## 总结
+
+
+
+
+
 A
 
 A
