@@ -36,7 +36,7 @@ Java NIO在非阻塞模式下，允许在线程从一个channel中读数据时�
 
 ## Selector（选择器）
 
-
+Java NIO的Selector允许单个线程同时监控多个channel的读写等事件。可以向Selector上注册多个channel，
 
 > 非阻塞模式下，数据下去之后，怎么保证数据可以写入成功呢。
 
