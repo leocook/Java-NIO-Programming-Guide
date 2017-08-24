@@ -12,4 +12,5 @@
 * [Java NIO ServerSocketChannel](java-nio-serversocketchannel.md)
 * [Java NIO: Non-blocking Server](java-nio-non-blocking-server.md)
 * [Java NIO Pipe](java-nio-pipe.md)
+* [Java NIO vs. IO](java-nio-vs-io.md)
 
