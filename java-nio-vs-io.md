@@ -38,6 +38,8 @@ Java NIO在非阻塞模式下，允许在线程从一个channel中读数据时�
 
 Java NIO的Selector允许单个线程同时监控多个channel的读写等事件。可以向Selector上注册多个channel，然后用一个线程去执行select方法，监听Channel的事件。在管理多个channel时，使用一个单线程执行Selector，一切都变得简单了。
 
+## NIO和标准IO对应用设计的影响
+
 > 非阻塞模式下，数据下去之后，怎么保证数据可以写入成功呢。
 
 
