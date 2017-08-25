@@ -78,5 +78,41 @@ try {
 }
 ```
 
+其实主要是使用了StandardCopyOption.REPLACE\_EXISTING这个参数。关于StandardCopyOption这个枚举类，还有其它枚举值，具体可以查看API文档。
+
+## Files.move\(\)
+
+Java NIO支持把文件从某个目录移到另外一个目录中去，这里和标准IO中java.io.File类的renameTO\(\)方法比较像。下面是Files.move\(\)方法的一个例子：
+
+```
+Path sourcePath      = Paths.get("data/logging-copy.properties");
+Path destinationPath = Paths.get("data/subdir/logging-moved.properties");
+
+try {
+    Files.move(sourcePath, destinationPath,
+            StandardCopyOption.REPLACE_EXISTING);
+} catch (IOException e) {
+    //moving file failed.
+    e.printStackTrace();
+}
+```
+
+同样的，如果目标文件已经存在，由于配置了参数StandardCopyOption.REPLACE\_EXISTING，所以会把原来存在的文件给替换掉。
+
+## Files.delete\(\)
+
+执行Files.delete\(\)方法可以删除指定的文件或者目录，下面是一个例子：
+
+```
+Path path = Paths.get("data/subdir/logging-moved.properties");
+
+try {
+    Files.delete(path);
+} catch (IOException e) {
+    //deleting file failed
+    e.printStackTrace();
+}
+```
+
 
 
