@@ -29,5 +29,11 @@ public class PathExample {
 
 ### 创建一个绝对路径的path
 
+在调用Paths.get\(\)方法来创建path时，可以传入一个绝对路径，来创建一个绝对路径的path:
+
+```
+Paths.get()
+```
+
 
 
