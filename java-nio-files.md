@@ -116,7 +116,5 @@ try {
 
 ## Files.walkFileTree\(\)
 
-Files.walkFileTree\(\)方法用来遍历某个目录下的目录树。
-
-
+Files.walkFileTree\(\)方法用来遍历某个目录下的目录树。walkFileTree\(\)方法把path和FileVisitor作为参数，Path指向需要遍历的目录，在遍历的过程中，将会调用FileVisitor。
 
