@@ -18,5 +18,5 @@ boolean pathExists =
             new LinkOption[]{ LinkOption.NOFOLLOW_LINKS});
 ```
 
-
+这里需要注意一下方法Files.exists的第二个参数。
 
