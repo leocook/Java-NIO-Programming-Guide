@@ -50,7 +50,7 @@ Path projects = Paths.get("d:\\data", "projects");
 Path file = Paths.get("d:\\data", "projects\\a-project\\myfile.txt");
 ```
 
-在说到相对路径的时候，需要看下这两个特殊符号"."和".."。下面看一些实例：
+在说到相对路径的时候，需要看下这两个特殊符号"."和".."。"."是指当前目录，".."是指当前目录的父目录。下面看一些实例：
 
 ```
 //获取到当前项目目录的path
@@ -59,17 +59,17 @@ Path currentDir = Paths.get(".");
 //获取到项目目录父目录的path
 Path parentDir = Paths.get("..");
 
-
-
+//对应 d:\\data\\projects\a-project
 Path currentDir = Paths.get("d:\\data\\projects\.\a-project");
 
 
-
+//对应 d:\data\projects\another-project
 Path parentDir2 = Paths.get("d:\\data\\projects\\a-project\\..\\another-project");
 
-
+//对应 d:\\data\\projects\a-project
 Path path1 = Paths.get("d:\\data\\projects", ".\\a-project");
 
+//对应 d:\\data\\projects\another-project
 Path path2 = Paths.get("d:\\data\\projects\\a-project",
                        "..\\another-project");
 ```
