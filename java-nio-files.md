@@ -168,5 +168,5 @@ Files.walkFileTree(path, new FileVisitor<Path>() {
 });
 ```
 
-
+在遍历目录的不同阶段会调用FileVisitor接口的不同方法。
 
