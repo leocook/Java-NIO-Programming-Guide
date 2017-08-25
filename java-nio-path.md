@@ -27,9 +27,7 @@ public class PathExample {
 
 注意一下，这里import导入的两个类，是在java.nio.file包下的。
 
-## 创建一个绝对路径的path
-
-
+### 创建一个绝对路径的path
 
 
 
