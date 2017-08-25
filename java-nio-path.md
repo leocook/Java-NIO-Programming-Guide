@@ -5,7 +5,7 @@ Java的一个Path对象实例相当于系统中的一个路径。
 * Path对象可以指向一个文件也可以指向一个目录；
 * 这个Path可以是相对路径，也可以是绝对路径
 
-在很多方面，`java.nio.file.Path`接口和java.io.File类有些相似，
+在很多方面，`java.nio.file.Path`接口和java.io.File类有些相似，但是也有一些微小的区别。在很多场景，都可以使用File类来替换Path接口使用的。
 
 
 
