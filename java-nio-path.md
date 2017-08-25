@@ -9,5 +9,21 @@ Java的一个Path对象实例相当于系统中的一个路径。
 
 ## 创建一个Path实例
 
-为了能够使用java.nio.file.Path对象实例，你必须创建一个Path对象，
+为了能够使用java.nio.file.Path对象实例，你必须创建一个Path对象。可以使用java.nio.file.Paths类的静态的方法get来创建一个Path对象的实例。下面是一个例子：
+
+```
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class PathExample {
+
+    public static void main(String[] args) {
+
+        Path path = Paths.get("c:\\data\\myfile.txt");
+
+    }
+}
+```
+
+注意一下，这里import导入的两个类，是在java.nio.file包下的。
 
