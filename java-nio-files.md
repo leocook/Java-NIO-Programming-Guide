@@ -22,5 +22,20 @@ boolean pathExists =
 
 ## Files.createDirectory\(\)
 
+把Path对象实例作为Files.createDirectory\(\)的参数，创建了一个新的目录。下面是一个例子：
 
+```
+Path path = Paths.get("data/subdir");
+
+try {
+    Path newDir = Files.createDirectory(path);
+} catch(FileAlreadyExistsException e){
+    // the directory already exists.
+} catch (IOException e) {
+    //something else went wrong
+    e.printStackTrace();
+}
+```
+
+如果目录在就存在了，那么将会抛出`java.nio.file.FileAlreadyExistsException`异常。
 
