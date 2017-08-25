@@ -114,5 +114,9 @@ try {
 }
 ```
 
+## Files.walkFileTree\(\)
+
+Files.walkFileTree\(\)方法用来遍历某个目录下的目录树。
+
 
 
