@@ -59,3 +59,24 @@ try {
 
 先创建source file的path实例，然后再创建dest file的path实例，最后执行Files.copy方法。如果dest文件已经存在，那么将会抛出`java.nio.file.FileAlreadyExistsException`异常。
 
+### 覆盖已经存在的文件
+
+在复制文件的时候，如果目标文件已经存在了，那么也可以覆盖目标文件，具体看下面例子：
+
+```
+Path sourcePath      = Paths.get("data/logging.properties");
+Path destinationPath = Paths.get("data/logging-copy.properties");
+
+try {
+    Files.copy(sourcePath, destinationPath,
+            StandardCopyOption.REPLACE_EXISTING);
+} catch(FileAlreadyExistsException e) {
+    //destination file already exists
+} catch (IOException e) {
+    //something else went wrong
+    e.printStackTrace();
+}
+```
+
+
+
