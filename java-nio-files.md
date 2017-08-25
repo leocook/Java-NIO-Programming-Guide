@@ -6,5 +6,5 @@ java.nio.file.Files类一般和java.nio.file.Path类结合使用的，所以在�
 
 ## File.exists\(\)
 
-Files.exists\(\)方法是用来检查指定的path在操作系统中是否真正的存在。在创建一个path的时候，指定的路径可以是不存在的，例如创建一个目录时，
+Files.exists\(\)方法是用来检查指定的path在操作系统中是否真正的存在。在创建一个path的时候，指定的路径可以是不存在的，例如创建一个目录时。
 
