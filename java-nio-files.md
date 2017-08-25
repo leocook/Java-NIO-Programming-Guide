@@ -172,5 +172,5 @@ Files.walkFileTree(path, new FileVisitor<Path>() {
 
 在访问每个目录前都会调用preVisitDirectory方法；在访问每个目录后都会调用postVisitDirectory方法。
 
-在访问每个文件期间都会调用visitFile方法，访问目录将不会调用；在访问文件失败后都会调用visitFileFailed方法，例如权限错误等的呢个。
+在访问每个文件期间都会调用visitFile方法，访问目录将不会调用；在访问文件失败后都会调用visitFileFailed方法，例如权限错误等等等。
 
