@@ -118,3 +118,27 @@ try {
 
 Files.walkFileTree\(\)方法用来遍历某个目录下的目录树。walkFileTree\(\)方法把path和FileVisitor作为参数，Path指向需要遍历的目录，在遍历的过程中，将会调用FileVisitor。
 
+在解释遍历目录的过程之前，先查看一下FileVisitor接口的源码：
+
+```
+public interface FileVisitor {
+
+    public FileVisitResult preVisitDirectory(
+        Path dir, BasicFileAttributes attrs) throws IOException;
+
+    public FileVisitResult visitFile(
+        Path file, BasicFileAttributes attrs) throws IOException;
+
+    public FileVisitResult visitFileFailed(
+        Path file, IOException exc) throws IOException;
+
+    public FileVisitResult postVisitDirectory(
+        Path dir, IOException exc) throws IOException {
+
+}
+```
+
+开发人员需要自己去实现FileVisitor接口，在遍历目录的不同阶段，会调用FileVisitor接口不同的方法。
+
+
+
