@@ -40,7 +40,39 @@ Path path = Paths.get("/home/jakobjenkov/myfile.txt"); //linux下
 
 ### 创建一个相对路径
 
-相对路径是指
+相对路径是什么应该不用过多的解释了，下面直接看段实例吧：
+
+```
+//对应的是"d:\data\projects"目录
+Path projects = Paths.get("d:\\data", "projects");
+
+//对应的是"d:\data\projects\a-project\myfile.txt"目录
+Path file = Paths.get("d:\\data", "projects\\a-project\\myfile.txt");
+```
+
+在说到相对路径的时候，需要看下这两个特殊符号"."和".."。下面看一些实例：
+
+```
+//获取到当前项目目录的path
+Path currentDir = Paths.get(".");
+
+//获取到项目目录父目录的path
+Path parentDir = Paths.get("..");
+
+
+
+Path currentDir = Paths.get("d:\\data\\projects\.\a-project");
+
+
+
+Path parentDir2 = Paths.get("d:\\data\\projects\\a-project\\..\\another-project");
+
+
+Path path1 = Paths.get("d:\\data\\projects", ".\\a-project");
+
+Path path2 = Paths.get("d:\\data\\projects\\a-project",
+                       "..\\another-project");
+```
 
 
 
