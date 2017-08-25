@@ -38,3 +38,9 @@ Path path = Paths.get("/home/jakobjenkov/myfile.txt"); //linux下
 
 当在windows下使用`/home/jakobjenkov/myfile.txt`来创建path时，那么实际上指向的文件路径是`C:/home/jakobjenkov/myfile.txt`。
 
+### 创建一个相对路径
+
+
+
+
+
