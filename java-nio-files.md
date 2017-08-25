@@ -168,5 +168,9 @@ Files.walkFileTree(path, new FileVisitor<Path>() {
 });
 ```
 
-在遍历目录的不同阶段会调用FileVisitor接口的不同方法。
+在遍历目录的不同阶段会调用FileVisitor接口的不同方法：
+
+在访问每个目录前都会调用preVisitDirectory方法；在访问每个目录后都会调用postVisitDirectory方法。
+
+在访问每个文件期间都会调用visitFile方法，访问目录将不会调用；在访问文件失败后都会调用visitFileFailed方法。
 
