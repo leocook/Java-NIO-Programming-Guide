@@ -7,5 +7,7 @@ Java的一个Path对象实例相当于系统中的一个路径。
 
 在很多方面，`java.nio.file.Path`接口和java.io.File类有些相似，但是也有一些微小的区别。在很多场景，都可以使用File类来替换Path接口使用的。
 
+## 创建一个Path实例
 
+为了能够使用java.nio.file.Path对象实例，你必须创建一个Path对象，
 
