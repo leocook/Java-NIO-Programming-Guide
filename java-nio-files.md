@@ -138,7 +138,35 @@ public interface FileVisitor {
 }
 ```
 
-开发人员需要自己去实现FileVisitor接口，在遍历目录的不同阶段，会调用FileVisitor接口不同的方法。
+开发人员需要自己去实现FileVisitor接口，在遍历目录的不同阶段，会调用FileVisitor接口不同的方法，如果你不想去自己实现这些方法，有个默认的SimpleFileVisitor类可以提供使用。下面是一个例子：
+
+```
+Files.walkFileTree(path, new FileVisitor<Path>() {
+  @Override
+  public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
+    System.out.println("pre visit dir:" + dir);
+    return FileVisitResult.CONTINUE;
+  }
+
+  @Override
+  public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+    System.out.println("visit file: " + file);
+    return FileVisitResult.CONTINUE;
+  }
+
+  @Override
+  public FileVisitResult visitFileFailed(Path file, IOException exc) throws IOException {
+    System.out.println("visit file failed: " + file);
+    return FileVisitResult.CONTINUE;
+  }
+
+  @Override
+  public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
+    System.out.println("post visit directory: " + dir);
+    return FileVisitResult.CONTINUE;
+  }
+});
+```
 
 
 
