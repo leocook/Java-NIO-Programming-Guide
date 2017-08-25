@@ -18,5 +18,5 @@ boolean pathExists =
             new LinkOption[]{ LinkOption.NOFOLLOW_LINKS});
 ```
 
-这里需要注意一下方法Files.exists的第二个参数。
+这里需要注意一下方法Files.exists的第二个参数，该参数是可选的。LinkOption.NOFOLLOW\_LINKS在这里的意义是指忽略符号链接的文件（超链接）。
 
