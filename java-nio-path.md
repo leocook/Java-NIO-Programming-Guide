@@ -76,7 +76,7 @@ Path path2 = Paths.get("d:\\data\\projects\\a-project",
 
 ## Path.normalize\(\)方法
 
-normalize\(\)方法是用来规范path的，例如：
+normalize\(\)方法是用来规范path的，其实就是返回path的真实路径对应的新的path，例如：
 
 ```
 String originalPath =
