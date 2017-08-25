@@ -14,5 +14,6 @@
 * [Java NIO Pipe](java-nio-pipe.md)
 * [Java NIO vs. IO](java-nio-vs-io.md)
 * [Java NIO Path](java-nio-path.md)
+* [Java NIO Files](java-nio-files.md)
 * [附件](fu-jian.md)
 
