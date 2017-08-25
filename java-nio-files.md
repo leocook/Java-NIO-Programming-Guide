@@ -39,3 +39,23 @@ try {
 
 如果目录在就存在了，那么将会抛出`java.nio.file.FileAlreadyExistsException`异常。
 
+## Files.copy\(\)
+
+把文件从一个地方，拷贝到另一个地方，下面是一个例子：
+
+```
+Path sourcePath      = Paths.get("data/logging.properties");
+Path destinationPath = Paths.get("data/logging-copy.properties");
+
+try {
+    Files.copy(sourcePath, destinationPath);
+} catch(FileAlreadyExistsException e) {
+    //destination file already exists
+} catch (IOException e) {
+    //something else went wrong
+    e.printStackTrace();
+}
+```
+
+先创建source file的path实例，然后再创建dest file的path实例，最后执行Files.copy方法。如果dest文件已经存在，那么将会抛出`java.nio.file.FileAlreadyExistsException`异常。
+
