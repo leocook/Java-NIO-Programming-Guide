@@ -74,5 +74,27 @@ Path path2 = Paths.get("d:\\data\\projects\\a-project",
                        "..\\another-project");
 ```
 
+## Path.normalize\(\)方法
 
+normalize\(\)方法是用来规范path的，例如：
+
+```
+String originalPath =
+        "d:\\data\\projects\\a-project\\..\\another-project";
+
+Path path1 = Paths.get(originalPath);
+System.out.println("path1 = " + path1);
+
+Path path2 = path1.normalize();
+System.out.println("path2 = " + path2);
+```
+
+上面这段代码执行的结果是：
+
+```
+path1 = d:\data\projects\a-project\..\another-project
+path2 = d:\data\projects\another-project
+```
+
+所以这个方法应该很好理解啦。
 
