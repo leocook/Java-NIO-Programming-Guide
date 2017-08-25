@@ -8,3 +8,15 @@ java.nio.file.Files类一般和java.nio.file.Path类结合使用的，所以在�
 
 Files.exists\(\)方法是用来检查指定的path在操作系统中是否真正的存在。在创建一个path的时候，指定的路径可以是不存在的，例如创建一个目录时。
 
+所以在使用path对象前，可以先使用File.exists\(\)来check一下该path是否存在。下面是一个例子：
+
+```
+Path path = Paths.get("data/logging.properties");
+
+boolean pathExists =
+        Files.exists(path,
+            new LinkOption[]{ LinkOption.NOFOLLOW_LINKS});
+```
+
+
+
