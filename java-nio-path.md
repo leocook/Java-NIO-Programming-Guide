@@ -40,7 +40,7 @@ Path path = Paths.get("/home/jakobjenkov/myfile.txt"); //linux下
 
 ### 创建一个相对路径
 
-
+相对路径是指
 
 
 
