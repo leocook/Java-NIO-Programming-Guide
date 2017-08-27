@@ -174,3 +174,19 @@ Files.walkFileTree(path, new FileVisitor<Path>() {
 
 在访问每个文件期间都会调用visitFile方法，访问目录将不会调用；在访问文件失败后都会调用visitFileFailed方法，例如权限错误等等等。
 
+上面四个方法中，每个方法都返回一个FileVisitResult枚举值，FileVisitResult枚举包含下面四个可选项：
+
+* CONTINUE
+
+* TERMINATE
+
+* SKIP\_SIBLINGS
+
+* SKIP\_SUBTREE
+
+
+
+
+
+
+
