@@ -184,9 +184,5 @@ Files.walkFileTree(path, new FileVisitor<Path>() {
 
 * SKIP\_SUBTREE
 
-
-
-
-
-
+返回的这个枚举值，决定了文件遍历过程中将会执行什么操作。
 
