@@ -178,6 +178,8 @@ Files.walkFileTree(path, new FileVisitor<Path>() {
 
 * CONTINUE
 
+表示文件遍历将会正常进行。
+
 * TERMINATE
 
 * SKIP\_SIBLINGS
