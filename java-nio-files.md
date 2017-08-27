@@ -178,13 +178,17 @@ Files.walkFileTree(path, new FileVisitor<Path>() {
 
 * CONTINUE
 
-表示文件遍历将会正常进行。
+文件遍历将会正常进行。
 
 * TERMINATE
 
+结束文件遍历
+
 * SKIP\_SIBLINGS
+
+继续遍历，但是跳过同一级别目录下的其它文件和目录
 
 * SKIP\_SUBTREE
 
-
+继续遍历，但是该目录下的其它文件和目录
 
