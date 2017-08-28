@@ -222,5 +222,31 @@ try {
 
 ### 使用递归删除目录中的内容
 
-File.walkFileTree\(\)方法可以用来递归删除一个目录，并且也删除该目录下的文件、以及子目录。Files.delete\(\)方法只会删除一个空目录。
+File.walkFileTree\(\)方法可以用来递归删除一个目录，并且也删除该目录下的文件、以及子目录。Files.delete\(\)方法只会删除一个空目录。实现的原理是在执行到visitFile\(\)方法时删除文件，在执行postVisitDirectory\(\)方法时删除目录。下面是对应的例子：
+
+```
+Path rootPath = Paths.get("data/to-delete");
+
+try {
+  Files.walkFileTree(rootPath, new SimpleFileVisitor<Path>() {
+    @Override
+    public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+      System.out.println("delete file: " + file.toString());
+      Files.delete(file);
+      return FileVisitResult.CONTINUE;
+    }
+
+    @Override
+    public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
+      Files.delete(dir);
+      System.out.println("delete dir: " + dir.toString());
+      return FileVisitResult.CONTINUE;
+    }
+  });
+} catch(IOException e){
+  e.printStackTrace();
+}
+```
+
+
 
