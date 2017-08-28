@@ -248,5 +248,9 @@ try {
 }
 ```
 
+## Files类中的其它方法
+
+java.nio.file.Files类包含了很多实用的方法，例如创建一个软链接、查看文件大小、以及设置文件的权限等等。具体的可以查看java.nio.file.Files这个类。
+
 
 
