@@ -1,5 +1,6 @@
 # Summary
 
+* [前言](qian-yan.md)
 * [Java NIO编程指南](README.md)
 * [Java NIO概述](Java NIO概述.md)
 * [Java NIO Channel](java-nio-channel.md)
@@ -15,5 +16,4 @@
 * [Java NIO vs. IO](java-nio-vs-io.md)
 * [Java NIO Path](java-nio-path.md)
 * [Java NIO Files](java-nio-files.md)
-* [附件](fu-jian.md)
 
