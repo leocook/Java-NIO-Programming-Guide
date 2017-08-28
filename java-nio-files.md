@@ -194,6 +194,34 @@ Files.walkFileTree(path, new FileVisitor<Path>() {
 
 ### 查找文件
 
+下面是一个继承了SimpleFileVisitor类，并查找README.txt文件的代码：
+
+```
+Path rootPath = Paths.get("data");
+String fileToFind = File.separator + "README.txt";
+
+try {
+  Files.walkFileTree(rootPath, new SimpleFileVisitor<Path>() {
+    
+    @Override
+    public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+      String fileString = file.toAbsolutePath().toString();
+      //System.out.println("pathString = " + fileString);
+
+      if(fileString.endsWith(fileToFind)){
+        System.out.println("file found at path: " + file.toAbsolutePath());
+        return FileVisitResult.TERMINATE;
+      }
+      return FileVisitResult.CONTINUE;
+    }
+  });
+} catch(IOException e){
+    e.printStackTrace();
+}
+```
+
+### 使用递归删除目录中的内容
+
 
 
 
