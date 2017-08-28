@@ -16,7 +16,7 @@ http://blog.csdn.net/skiof007/article/details/52873421
 
 关于我个人，我是一个比较喜欢技术的互联网从业者，主要做大数据方向的事情，对算法和数学都有浓厚兴趣。如果你想和我深入交流技术，一起学习进步，可以联系我！
 
-> 个人微信：**leocook**，记得备注：“**Java NIO**”！
+> 个人微信：**leocook**，记得备注：“**Java NIO**”。
 
 ![](/assets/weixin.png)
 
