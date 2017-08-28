@@ -202,7 +202,7 @@ String fileToFind = File.separator + "README.txt";
 
 try {
   Files.walkFileTree(rootPath, new SimpleFileVisitor<Path>() {
-    
+
     @Override
     public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
       String fileString = file.toAbsolutePath().toString();
@@ -222,7 +222,5 @@ try {
 
 ### 使用递归删除目录中的内容
 
-
-
-
+File.walkFileTree\(\)方法可以用来递归删除一个目录，并且也删除该目录下的文件、以及子目录和子目录下的文件。
 
