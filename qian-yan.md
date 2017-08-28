@@ -2,6 +2,8 @@
 
 标准的Java IO API使用起来比较方便，由于它是同步阻塞的IO，所以在使用时可能会效率地下，我们可以称标准的Java IO API为Java BIO API。自Java1.4开始，Java提供了NIO\(New IO\) API，Java NIO API可以用来替换原来的Java BIO API,例如：`Java IO`和`Java Networking`。Java NIO提供了一套与标准的Java IO完全不同的API。
 
+Netty是一个高性能的异步事件驱动的NIO框架，目前Java异步IO开发中，比较主流的做法就是使用netty来做，因此有不少开发者都使用过netty的api，如果查看源码，其实netty有很多地方都是对Java NIO API的封装。所以如果想读懂Netty的源码，就你就必须要懂Java NIO的整体设计，以及相关的API功能。
+
 ## Java对BIO/NIO/AIO的支持
 
 ### BIO/NIO/AIO概念说明
